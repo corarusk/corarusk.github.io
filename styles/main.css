@@ -1,0 +1,58 @@
+header {
+  background: url(../images/hero.png) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+} /* plan to edit the image with more white background so text is legible */
+
+
+h1 {
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.slogan {
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: normal;
+  padding: 25px;
+}
+
+main {
+  max-width: 900px;
+}
+
+.project-description {
+  padding-left: 0;
+}
+
+.project img {
+  width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
+}

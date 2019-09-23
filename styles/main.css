@@ -33,10 +33,10 @@ main {
   width: 100%;
 }
 
-footer.mdl-mini-footer {
+footer {
   bottom: 0;
   left: 0;
-  padding: 0.5rem;
+  padding: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -52,7 +52,26 @@ body {
   padding-bottom: 5rem;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
+footer > ul {
+  margin: 0;
+  font-size: 2.5rem;
+  background-color: black;
+  height: 50px;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.fa-linkedin-square, .fa-github-square {
+  color: white;
 }

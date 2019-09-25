@@ -1,9 +1,226 @@
+/*----------- Global------------- */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 html {
+  font-family: cursive;
+  font-weight: 100;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  /*background-image: url();*/
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:"Poppins", sans-serif;
+}
+
+
+h1.slogan {
+  font-size: 75px;
+  font-weight: 400;
+  color: white;
+  font-family: "Abril Fatface";
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 400;
+  color: black;
+  font-family: "Abril Fatface";
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #17191A;
+  font-family: "Abril Fatface";
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: black;
+}
+
+h5.name {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+}
+
+p {
+  color: #8F9EA5;
+  opacity: 0.8;
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/*----------- Nav ------------- */
+.nav {
+  height: 100px;
+  text-align: center;
+  background-color: black;
+}
+
+.nav a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*----------- Landing ------------- */
+
+.landing {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  }
+
+.landingName {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.landingSlogan {
+  position: absolute;
+  bottom: 10em;
+}
+
+.landingScroll {
+  position: absolute;
+  bottom: 5em;
+  left:0;
+  right:0;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+/*----------- Skills ------------- */
+.skills {
+  text-align: center;
+  margin-bottom: 8em;
+  margin-top: 8em;
+}
+
+.skills p {
+  margin-bottom: 30px;
+}
+
+.skills img {
+  width: 40px;
+  margin: 0 15px;
+}
+
+/*----------- Project 01 ------------- */
+.work {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20em;
+  margin-top: 8em;
+}
+
+.work > .workText {
+  position: absolute;
+  margin-top: 2em;
+}
+
+
+.work > .workText > .underline {
+  display: block;
+  background-color: blue;
+  height: 3px;
+  width: 61px;
+  margin-top: 5px;
+}
+
+.work > .workImg {
+  width: 85%;
+  float: right;
+}
+
+.work ul {
+  position: absolute;
+  bottom: 0;
+  right: 87%;
+}
+
+.work ul li {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/*----------- Project 02 ------------- */
+.work2 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20em;
+}
+
+.work2 > .workText {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  text-align: right;
+}
+
+.work2 > .workText > .underline {
+  display: block;
+  background-color: blue;
+  height: 3px;
+  width: 61px;
+  margin-top: 5px;
+  float: right;
+}
+
+.work2 > .workImg {
+  width: 85%;
+  float: left;
+}
+
+.work2 ul {
+  position: absolute;
+  bottom: 0;
+  left: 86%;
+}
+
+.work2 ul li {
+  margin-top: 20px;
+
+}
+
+
+/*html {
   font-size: 10px;
 }
 
@@ -78,7 +295,7 @@ nav {
 }
 
 
-/* typograhpy */
+/* typograhpy
   h1 {
     font-size: 4.3rem;
     font-family: 'Abril Fatface', cursive;
@@ -89,7 +306,7 @@ nav {
     padding-top: 15rem;
   }
 
-  /* section headers */
+  /* section headers
   h2 {
 
   }

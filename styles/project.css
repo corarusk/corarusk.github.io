@@ -40,6 +40,7 @@ main {
   margin: auto;
   padding-top: 9rem;
   padding-bottom: 9rem;
+  overflow: hidden;
 }
 
 .sectionTitle {
@@ -61,6 +62,71 @@ main {
   padding: 2rem;
 }
 
+
+/* large images */
+.sectionImg {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  max-width: 100%;
+}
+
+.sectionImg {
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+
+/*----------- Dividers ------------- */
+.divider, .dividerInside, .dividerInsideLast {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  height: 2px;
+  background-color: #E1E1E0;
+  width: 85%;
+}
+.dividerInside {
+  width: 100%;
+}
+
+.dividerInsideLast {
+  width: 100%;
+  margin-top: 9rem;
+}
+
+
+/*----- Key Takeaways */
+.takeawayText ul {
+  list-style-type: disc;
+}
+.takeawayLabel {
+  color: #A6544A;
+  text-transform: uppercase;
+}
+
+
+/* prototype button */
+button.protoButton {
+  margin-top: 50px;
+  background-color: #111010;
+  border: none;
+  padding: 10px 60px;
+}
+button a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+}
+
+
+/* text */
 h1 {
   font-size: 7.5rem;
   font-weight: 400;
@@ -146,8 +212,8 @@ h5.navLabel {
 .landingContainer {
   height: 115vh;
   position: relative;
-  background-color: red;
-  /* not working */ background-image: url('images/teacherPower.png');
+  /* not working */ background-image: url("images/teacherPower.png");
+  background-color: #cccccc;
 }
 
 .landing {
@@ -167,27 +233,14 @@ h5.navLabel {
   padding-bottom: 5rem;
 }
 
+.landingImg {
+    margin-top: 8rem;
+}
+
 .obLogo {
   padding: 4rem;
 }
 
-button.protoButton {
-  margin-bottom: 75px;
-  margin-top: 50px;
-  background-color: #111010;
-  border: none;
-  padding: 10px 60px;
-}
-
-.landingText a {
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  font-family:"Poppins", sans-serif;
-  font-weight: normal;
-}
 
 
 
@@ -274,32 +327,10 @@ h1.percent {
 }
 
 .challenges {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 
-.challenges a {
-  text-decoration: none;
-}
-
-h4.button {
-  margin-top: 6rem;
-}
-
-.challenges > .underline {
-  background-color: #99B0B6;
-  height: 3px;
-  width: 16rem;
-  margin: auto;
-  margin-top: 4px;
-  text-align: center;
-}
-
-.challenges i {
-  font-size: 1.2rem;
-  color: #99B0B6;
-  padding-left: .5rem;
-}
 
 
 /*----- Competitive Analysis */
@@ -320,7 +351,7 @@ h4.button {
 
 .rowComp {
   margin-top: 5rem;
-  padding-bottom: 12rem;
+  margin-bottom:9rem;
 }
 
 .row:after {  /* Clear floats after the columns */
@@ -329,30 +360,28 @@ h4.button {
   clear: both;
 }
 
-/*----------- Divider ------------- */
-.divider {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  height: 2px;
-  background-color: #E1E1E0;
-}
-
 
 
 /*----- User Personas */
 .personaContainer {
   width: 100%;
   margin: auto;
+  overflow: hidden;
+  padding-bottom: 9rem;
+}
+
+.sectionText {
+  width: 60%;
+  margin: auto;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 .rowPersona {
-  margin-top: 5rem;
-  padding-bottom: 12rem;
-  width: 100%;
+  width: 85%;
+  margin: auto;
+  padding-bottom: 3rem;
 }
 
 .columnPersona { /* need to make same width as comp analysis */
@@ -365,54 +394,90 @@ h4.button {
   padding-top: 0;
 }
 
+.columnImg img {
+  width: 49%;
+  position: relative;
+  vertical-align: middle;
+}
+
 .textLeft, .textLeft ul {
   text-align: left;
   list-style-type: disc;
 }
 
-.row:after {  /* Clear floats after the columns */
+.rowPersona:after {  /* Clear floats after the columns */
   content: "";
   display: table;
   clear: both;
 }
 
-/* button style not working
-.personaContainer  a {
-  text-decoration: none;
+/* need to fix button link */
+
+
+
+
+/*----------- Information Architecture ------------- */
+/*----- User Stories */
+.centerText {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
-h4.buttonSurvey {
-  bottom: 1rem;
+/*----- Flows and Sitemap */
+.flowContainer {
+  width: 100%;
+  background-color: #EFEFEF;
+
 }
 
-.personaContainer  > .underline {
-  background-color: #99B0B6;
-  height: 3px;
-  width: 16rem;
+
+/*------- usability tests */
+#testingSection {
+  padding-bottom: 2rem;
+}
+
+.testingImg img {
+  width: 30%;
+  padding: 1.5%;
+}
+
+.testingImg {
+  width: 85%;
   margin: auto;
-  margin-top: 4px;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#last {
+    padding-bottom: 5rem;
+}
+
+/*------- brand identity */
+.deliverableLink {
+  margin: 6rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
-.personaContainer  i {
-  font-size: 1.2rem;
-  color: #99B0B6;
-  padding-left: .5rem;
-}
-*/
 
-/*----- Key Takeaways */
+/*------- pref testing */
 
-.takeawayText ul {
-  list-style-type: disc;
+
+
+
+
+/*----------- Reflection ------------- */
+#lastSection {
+  padding: 3rem;
 }
+
 
 
 
 /*----------- Footer ------------- */
-
 .footer {
-  height: 29.5vh;
+  height: 40vh;
   position: relative;
   background-color: black;
   }

@@ -36,6 +36,10 @@ main {
   background-color: white;
 }
 
+.textLeft, .textLeft ul {
+  text-align: left;
+  list-style-type: disc;
+}
 
 .section {
   width: 60%;
@@ -126,13 +130,18 @@ h2.keyTakeaways {
 
 
 /* prototype button */
-button.protoButton {
-  margin-top: 50px;
+.protoButton {
+  margin: auto;
+  margin-top: 6rem;
   background-color: #111010;
   border: none;
-  padding: 10px 60px;
+  padding: 14px 60px;
+  width: 20rem;
+  box-shadow: 5.09302px 10.186px 12.7326px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
-button a {
+
+.protoButton a {
   text-align: center;
   text-decoration: none;
   color: white;

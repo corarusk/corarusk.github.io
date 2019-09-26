@@ -1,0 +1,451 @@
+/*----------- Global------------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html {
+  font-weight: 100;
+  font-size: 10px;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  font-family:"Poppins", sans-serif;
+  background-color: white;
+}
+
+.section {
+  width: 60%;
+  margin: auto;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle > .underline {
+  background-color: #A6544A;
+  height: 2px;
+  width: 130px;
+  margin: auto;
+  text-align: center;
+}
+
+.phase {
+  background-color: #111010;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 400;
+  color: #111010;
+  font-family: "Abril Fatface";
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #202020;
+  font-family: "Abril Fatface";
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  color: #202020;
+  font-family: "Abril Fatface";
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #202020;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 1.8rem;
+  color: #202020;
+  text-transform: uppercase;
+  font-family:"Poppins Medium", sans-serif;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+p {
+  color: #202020;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+
+
+
+/*--------------------- Nav ---------------------- */
+.nav {
+  height: 100px;
+  text-align: center;
+  background-color: #111010;
+}
+
+.nav a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+h5.navLabel {
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  margin:0;
+}
+
+
+
+
+
+/*--------------------- Landing ---------------------- */
+.landingContainer {
+  height: 115vh;
+  position: relative;
+  background-color: red;
+  /* not working */ background-image: url('images/teacherPower.png');
+}
+
+.landing {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  padding-top: 5rem;
+  text-align: center;
+  height: 100vh;
+}
+
+.landing img {
+  width: 270px;
+  left:0;
+  right:0;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.obLogo {
+  padding: 4rem;
+}
+
+button.protoButton {
+  margin-bottom: 75px;
+  margin-top: 50px;
+  background-color: #111010;
+  border: none;
+  padding: 10px 60px;
+}
+
+.landingText a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+}
+
+
+
+
+/*--------------------- Summary ---------------------- */
+
+/*----- Roles, Deliverables, Specs */
+.summaryContainer {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+}
+
+.row {
+  margin-top: 13rem;
+  margin-bottom: 10rem;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*----- Problem */
+.problemContainer {
+  width: 100%;
+  background-color: #efefef;
+}
+
+
+/*----- Solution */
+.solutionImg {
+  margin-top: 5rem;
+}
+
+
+/*--------------------- Discovery and Research ---------------------- */
+
+/*----- User Survey */
+h1.percent {
+  font-size: 4.5rem;
+}
+
+.columnPercent {
+  float: left;
+  width: 15%;
+  text-align: center;
+  margin: auto;
+  padding-left: 9.16%;
+  padding-right: 9.16%;
+  padding-top: 0;
+}
+
+.surveyContainer {
+  width: 100%;
+  margin: auto;
+  background-color: #efefef;
+}
+
+.surveyText {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.row {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.challenges {
+  margin-top: 6rem;
+}
+
+
+.challenges a {
+  text-decoration: none;
+}
+
+h4.button {
+  margin-top: 6rem;
+}
+
+.challenges > .underline {
+  background-color: #99B0B6;
+  height: 3px;
+  width: 16rem;
+  margin: auto;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.challenges i {
+  font-size: 1.2rem;
+  color: #99B0B6;
+  padding-left: .5rem;
+}
+
+
+/*----- Competitive Analysis */
+.compContainer {
+  width: 100%;
+  margin: auto;
+}
+
+.columnComp {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+  padding-left: 4.15%;
+  padding-right: 4.15%;
+  padding-top: 0;
+}
+
+.rowComp {
+  margin-top: 5rem;
+  padding-bottom: 12rem;
+}
+
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------- Divider ------------- */
+.divider {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  height: 2px;
+  background-color: #E1E1E0;
+}
+
+
+
+/*----- User Personas */
+.personaContainer {
+  width: 100%;
+  margin: auto;
+}
+
+.rowPersona {
+  margin-top: 5rem;
+  padding-bottom: 12rem;
+  width: 100%;
+}
+
+.columnPersona { /* need to make same width as comp analysis */
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0;
+}
+
+.textLeft, .textLeft ul {
+  text-align: left;
+  list-style-type: disc;
+}
+
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* button style not working
+.personaContainer  a {
+  text-decoration: none;
+}
+
+h4.buttonSurvey {
+  bottom: 1rem;
+}
+
+.personaContainer  > .underline {
+  background-color: #99B0B6;
+  height: 3px;
+  width: 16rem;
+  margin: auto;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.personaContainer  i {
+  font-size: 1.2rem;
+  color: #99B0B6;
+  padding-left: .5rem;
+}
+*/
+
+/*----- Key Takeaways */
+
+.takeawayText ul {
+  list-style-type: disc;
+}
+
+
+
+/*----------- Footer ------------- */
+
+.footer {
+  height: 29.5vh;
+  position: relative;
+  background-color: black;
+  }
+
+.footerText {
+  text-align: center;
+}
+
+.footerText > h2 {
+  color: #A6544A;
+  font-size: 4.8rem;
+  padding-top: 3.8rem;
+  margin-bottom: 0;
+}
+
+.footerText > p {
+  color: white;
+  padding: 0;
+}
+
+.footerIcons {
+  text-align: center;
+  padding: 2em;
+}
+
+.footerIcons a {
+  color: #99B0B6;
+  padding: 3em;
+}
+
+p.copyright {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}

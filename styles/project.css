@@ -15,6 +15,7 @@
   display: table;
 }
 
+
 html {
   font-weight: 100;
   font-size: 10px;
@@ -35,6 +36,7 @@ main {
   background-color: white;
 }
 
+
 .section {
   width: 60%;
   margin: auto;
@@ -43,19 +45,44 @@ main {
   overflow: hidden;
 }
 
+/* ------- Section Names */
 .sectionTitle {
   text-align: center;
   margin-bottom: 3rem;
 }
-
+.sectionTitle i {
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  color: #A6544A;
+}
 .sectionTitle > .underline {
   background-color: #A6544A;
-  height: 2px;
+  height: 3px;
+  width: 130px;
+  margin: auto;
+  text-align: center;
+}
+/* Key Takeaways Section */
+.takeawayText ul {
+  list-style-type: disc;
+}
+.takeawayLabel {
+  color: #A6544A;
+  text-transform: uppercase;
+}
+h2.keyTakeaways {
+  color: #A6544A;
+}
+.keyUnderline {
+  background-color: #111010;
+  height: 3px;
   width: 130px;
   margin: auto;
   text-align: center;
 }
 
+
+/*-- Phase 1-5 */
 .phase {
   background-color: #111010;
   text-align: center;
@@ -66,13 +93,13 @@ main {
 /* large images */
 .sectionImg {
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   max-width: 100%;
-}
-
-.sectionImg {
   padding-bottom: 2rem;
-  text-align: left;
+}
+.sectionImg img {
+  margin-top: 2rem;
+  max-width: 100%;
 }
 
 
@@ -91,21 +118,11 @@ main {
 .dividerInside {
   width: 100%;
 }
-
 .dividerInsideLast {
   width: 100%;
   margin-top: 9rem;
 }
 
-
-/*----- Key Takeaways */
-.takeawayText ul {
-  list-style-type: disc;
-}
-.takeawayLabel {
-  color: #A6544A;
-  text-transform: uppercase;
-}
 
 
 /* prototype button */
@@ -126,13 +143,14 @@ button a {
 }
 
 
-/* text */
+/* -----text */
 h1 {
   font-size: 7.5rem;
   font-weight: 400;
   color: #111010;
   font-family: "Abril Fatface";
 }
+
 
 h2 {
   font-size: 2.8rem;
@@ -152,7 +170,7 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
-  color: #202020;
+  color: #A6544A;
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   font-weight: 800;
@@ -175,6 +193,8 @@ p {
   font-weight: normal;
   line-height: 2.5rem;
 }
+
+
 
 
 
@@ -212,8 +232,10 @@ h5.navLabel {
 .landingContainer {
   height: 115vh;
   position: relative;
-  /* not working */ background-image: url("images/teacherPower.png");
+  background-image: url("../images/teacherPower.png");
   background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landing {
@@ -273,18 +295,19 @@ h5.navLabel {
   clear: both;
 }
 
-
 /*----- Problem */
 .problemContainer {
   width: 100%;
   background-color: #efefef;
 }
 
-
 /*----- Solution */
 .solutionImg {
   margin-top: 5rem;
+  text-align: center;
 }
+
+
 
 
 /*--------------------- Discovery and Research ---------------------- */
@@ -332,7 +355,6 @@ h1.percent {
 
 
 
-
 /*----- Competitive Analysis */
 .compContainer {
   width: 100%;
@@ -361,7 +383,6 @@ h1.percent {
 }
 
 
-
 /*----- User Personas */
 .personaContainer {
   width: 100%;
@@ -384,7 +405,7 @@ h1.percent {
   padding-bottom: 3rem;
 }
 
-.columnPersona { /* need to make same width as comp analysis */
+.columnPersona {
   float: left;
   width: 30%;
   text-align: center;
@@ -411,7 +432,7 @@ h1.percent {
   clear: both;
 }
 
-/* need to fix button link */
+
 
 
 
@@ -428,8 +449,8 @@ h1.percent {
 .flowContainer {
   width: 100%;
   background-color: #EFEFEF;
-
 }
+
 
 
 /*------- usability tests */
@@ -461,7 +482,17 @@ h1.percent {
 }
 
 
-/*------- pref testing */
+/*------- pref testing
+N/A
+*/
+
+
+
+/*------- prototype / key takeaways images */
+.iterations {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
 
 
 

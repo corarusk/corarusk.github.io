@@ -7,35 +7,39 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <!-- styles -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/about.css">
   </head>
 
 <container>
   <body>
 
-    <!-- NAVBAR -->
-    <nav style="background-color:black;">
-      <ul>
-        <li><img src="images/logo.png" alt="logo"></li>
-        <li><img src="images/ham.png" alt="menu"></li>
-      </ul>
-    </nav>
+<!-- Nav ------------------------------------------>
+    <div class="nav">
+      <a href="#work"><h5 class="navLabel">Work</h5></a>
+      <a href="#about"><h5 class="navLabel">About</h5></a>
+      <a href="#resume"><h5 class="navLabel">Resume</h5></a>
+      <a href="#contact"><h5 class="navLabel">Contact</h5></a>
+    </div>
 
-    <!-- photo and quote -->
-    <header>
-      <img src="images/about pic.png" alt="Photo of Cora Rusk">
-      <p>“Every success story is a tale of constant adaptation, revision, and change.”</p>
-    </header>
+<!-- Landing ------------------------------------------>
+    <section class="landingContainer">
+      <div class="landing">
+        <div class="landingQuote">
+          <h3>“Every success story is a tale of constant<br>adaptation, revision, and change.”</h3>
+        </div>
+      </div>
+    </section>
 
-  <main>
 
-     <!-- Introduction -->
-     <article class="introduction">
-      <section>
-        <h2>Who
-          <span class="iAm">am I?</span>
-        </h2>
-        <div>
+
+<!-- Introduction ------------------------------------------>
+<main>
+  <section class="container">
+    <div class="section">
+      <h2>Who <span class="iAm"> am I?</span></h2>
+      <div class="box">
+        <div class="sectionText">
           <p>My path to a career in UX design has been all but a direct flight. It took many meaningful pit stops and flight changes to get where I am today. Nonetheless, I’m thankful because those “layovers” have molded me to be the person I am today. And who
             <span class="iAm"> am I?</span>
             <br><br>
@@ -43,52 +47,69 @@
             <br><br>
             <span class="iAm">I am</span> a UX Designer.</p>
         </div>
-      </section>
-    </article>
-
-    <!-- My Story -->
-    <article class="myStory">
-      <section>
-        <h3>AT THE AGE OF 9,</h3><p> I got my first babysitting gig. Fast forward 3 years and I am the hottest commodity in the babysitting world. I even obtained a Red Cross Babysitting Certification. I take my work seriously, okay? On my off time, I was either rearranging my bedroom or transforming my MySpace profile about every other week. Little did I know, this was the beginning of my love for design and tech.</p>
-      </section>
-
-      <section>
-        <h3>COLLEGE.</h3><p> Right off the bat, I knew I wanted to be a teacher. You get an entire classroom to decorate? Choose a new color scheme every year? Summers off? Oh, and did I mention that I really love kids? Seems like the perfect fit… right?</p>
-
-        <h3>TWO YEARS INTO MY TEACHING CAREER.</h3><p> I’m established, successful, but feeling… Eh.<br>
-          <br>Eh (Adjective) Of bad quality.<br>My french fries were eh.<br>
-          <br>That’s exactly how I was feeling about my career. Sure, I like education. Actually, I love education. Was I good at it? Sure. But a passion inside of me wasn’t being fueled the way I know it could be. I had a dream and drive to be a part of something bigger. I had no idea what that was. Heck, the only thing I’ve ever been my whole life was a teacher. Could I even be anything else?</p>
-      </section>
-
-      <section>
-        <h3>THE SOURCE OF MY EPIPHANY.</h3><p> My husband. A technical recruiter specializing in senior level engineering roles, had a new type of position to fill. Something called a UX Designer? What’s that? As he was learning about the role of a UX designer, he felt that every bullet point he went over screamed:</p>
-          <h4>"CORA WOULD BE SO GOOD AT THIS!"</h4>
-
-        <h3>TL;DR</h3><p>an ample amount of YouTube and Blog binging helped me discover the field of design. The more I learned, the more I loved.<br>I am so certain about this career change and so certain that UX would become a part of my identity. So, what does any rational dream-chaser do? I quit my full-time job as a teacher and enrolled in Bloc’s UX Design Apprenticeship program. In other words, I made the best decision of my life.</p>
-      </section>
-    </article>
+      </div>
+    </div>
+  </section>
 
 
+<!-- My Story ------------------------------------------>
+  <section class="greyContainer">
+    <div class="section">
+      <h2>My Story.</h2>
+      <div class="underline"></div>
+      <div class="sectionFirst">
+        <p><span class="label">At the age of 9, </span>I got my first babysitting gig. Fast forward 3 years and I am the hottest commodity in the babysitting world. I even obtained a Red Cross Babysitting Certification. I take my work seriously, okay? On my off time, I was either rearranging my bedroom or transforming my MySpace profile about every other week. Little did I know, this was the beginning of my love for design and tech.</p>
+      <!-- divider inside section -->
+       <div class="dividerInside"></div>
+      </div>
+     </div>
 
-    <!-- Conclusion -->
-    <article class="conclusion">
-      <h3>
-        <span class="underline">A CAREER CHANGE IS HARD WORK.</span>
-      </h3>
-      <p>It takes discipline, especially being self-paced and online. Through the program and guidance from my mentor, Becky Olsen, I learned how to reposition my previously acquired skills and channel them to produce user centered products. UX design encompasses all of my passions in one.<br>Design is more than just a pretty face, it is a real solution to someone’s real problem. It’s a part of who<span class="iAm"> I am.</span></p>
-    </article>
-  </main>
+     <div class="subSection">
+         <p><span class="label">COLLEGE.</span> Right off the bat, I knew I wanted to be a teacher. You get an entire classroom to decorate? Choose a new color scheme every year? Summers off? Oh, and did I mention that I really love kids? Seems like the perfect fit… right?</p>
+         <br><br>
+         <p><span class="label">TWO YEARS INTO MY TEACHING CAREER.</span> I’m established, successful, but feeling… Eh.</p>
+         <div class="indent">
+           <p>Eh (Adjective) Of bad quality.<br>My french fries were eh.</p>
+         </div>
+        <p>That’s exactly how I was feeling about my career. Sure, I like education. Actually, I love education. Was I good at it? Sure. But a passion inside of me wasn’t being fueled the way I know it could be. I had a dream and drive to be a part of something bigger. I had no idea what that was. Heck, the only thing I’ve ever been my whole life was a teacher. Could I even be anything else?</p>
+        <!-- divider inside section -->
+         <div class="dividerInside"></div>
+     </div>
 
-    <footer>
-      <h1>Get in touch.<h1>
-      <p>Thanks for visiting! Have questions or want to chat about UX? Let’s connect!</p>
-      <ul>
-        <li><a href="mailto:corarusk@outlook.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/cora-rusk/"><img src="images/linkedin.svg" aria-hidden="true"></a></li>
-      </ul>
-      <h3><i class="fa fa-copyright" aria-hidden="true"></i> 2019 | Designed and developed by Cora Rusk</h3>
-    </footer>
+     <div class="subSection">
+         <p><span class="label">the source of my epiphany.</span>  My husband. A technical recruiter specializing in senior level engineering roles, had a new type of position to fill. Something called a UX Designer? What’s that? As he was learning about the role of a UX designer, he felt that every bullet point he went over screamed:</p>
+         <div class="indent">
+           <p>"CORA WOULD BE SO GOOD AT THIS!"</p>
+         </div>
+        <p><span class="label">TL;DR -</span> an ample amount of YouTube and Blog binging helped me discover the field of design. The more I learned, the more I loved.</p>
+        <br><br>
+        <p>I am so certain about this career change and so certain that UX would become a part of my identity. So, what does any rational dream-chaser do? I quit my full-time job as a teacher and enrolled in Bloc’s UX Design Apprenticeship program. In other words, I made the best decision of my life.</p>
+        <br><br><br>
+     </div>
+  </section>
 
+  <!-- Conclusion -->
+  <div class="lastSection">
+    <h4>a career change is hard work.</h4>
+    <div class="underline"></div>
+    <br><br>
+    <p>It takes discipline, especially being self-paced and online. Through the program and guidance from my mentor, Becky Olsen, I learned how to reposition my previously acquired skills and channel them to produce user centered products. UX design encompasses all of my passions in one - and when I am passionate about something, I put my whole heart into it.
+    <br><br>Design isn't just surface level. Design isn't just a pretty face. It is a real solution to someone’s real problem. It’s a part of who <span class="iAm">I am. </span></p>
+
+  </div>
+
+  <!-- Footer ------------------------------------------>
+            <div class="footer">
+              <div class="footerText">
+                <h2>Get in touch.</h2>
+                <p>Thanks for visiting! Have questions or want to chat<br>about UX? Let’s connect!</p>
+              </div>
+                <div class="footerIcons">
+                  <a href="#"><i class="fa fa-envelope fa-3x"aria-hidden="true"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                </div>
+                <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
+            </div>
+</main>
     </body>
-    </container>
     </html>

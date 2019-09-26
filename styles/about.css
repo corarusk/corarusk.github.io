@@ -1,0 +1,247 @@
+/*----------- Global------------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+html {
+  font-weight: 100;
+  font-size: 10px;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  font-family:"Poppins", sans-serif;
+  background-color: white;
+}
+
+/*--------------------- Nav ---------------------- */
+.nav {
+  height: 100px;
+  text-align: center;
+  background-color: #111010;
+}
+
+.nav a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+h5.navLabel {
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  margin:0;
+}
+
+
+/*--------------------- Landing ---------------------- */
+.landingContainer {
+  height: 100vh;
+  position: relative;
+  background-color: #110010;
+}
+
+.landing {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+  background-image: url("../images/aboutPic.png");
+  background-color: #110010;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* quote */
+h3 {
+  color: white;
+  opacity: 0.5;
+  font-size: 2.2rem;
+  padding-top: 15rem;
+  font-family:"Poppins", sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 30px;;
+}
+
+/*--------------------- Introduction ---------------------- */
+
+.container {
+  width: 100%;
+}
+
+.section {
+  width: 65%;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #202020;
+  font-family: "Abril Fatface";
+}
+
+p {
+  color: #202020;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+
+.iAm {
+  color: #A6544A;
+}
+
+.box {
+  border: 1px solid #E1E1E0;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sectionText {
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/*--------------------- My Story ---------------------- */
+.greyContainer {
+  background-color: #efefef;
+}
+
+.sectionFirst {
+  width: 100%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.label {
+  font-size: 1.8rem;
+  color: #A6544A;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.dividerInside {
+  display: block;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-style: inset;
+  height: 3px;
+  background-color: #A6544A;
+  width: 40%;
+}
+
+.subSection {
+  width: 65%;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+.indent {
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* conclusion */
+h4 {
+  font-size: 1.8rem;
+  color: #A6544A;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.underline {
+  background-color: #99B0B6;
+  height: 3px;
+  width: 130px;
+  margin-top: .6rem;
+}
+
+.lastSection {
+  width: 65%;
+  margin: auto;
+  padding-top: 8rem;
+  padding-bottom: 13rem;
+}
+
+
+/*----------- Footer ------------- */
+.footer {
+  height: 40vh;
+  position: relative;
+  background-color: black;
+  }
+
+.footerText {
+  text-align: center;
+}
+
+.footerText > h2 {
+  color: #A6544A;
+  font-size: 4.8rem;
+  padding-top: 3.8rem;
+  margin-bottom: 0;
+}
+
+.footerText > p {
+  color: white;
+  padding: 0;
+}
+
+.footerIcons {
+  text-align: center;
+  padding: 2em;
+}
+
+.footerIcons a {
+  color: #99B0B6;
+  padding: 3em;
+}
+
+p.copyright {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}

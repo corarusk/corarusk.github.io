@@ -19,12 +19,17 @@
 <body>
 <section class="container">
 <!-- Nav ------------------------------------------>
-  <div class="nav">
-    <a href="#work"><h5 class="navLabel">Work</h5></a>
-    <a href="#about"><h5 class="navLabel">About</h5></a>
-    <a href="#resume"><h5 class="navLabel">Resume</h5></a>
-    <a href="#contact"><h5 class="navLabel">Contact</h5></a>
-  </div>
+  <nav>
+    <div class="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1x_s9CJdLIRRBjJ1KMCdO9fv7WzSLrrFk/view?usp=sharing">Resume</a></li>
+      <li><a href="mailto:corarusk@outlook.com">Contact</a></li>
+    </ul>
+  </nav>
 
 
 <!-- Landing ------------------------------------------>
@@ -44,6 +49,7 @@
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
       </div>
     </div>
+  </header>
 </section>
 
 
@@ -56,9 +62,9 @@
       <div class="workText">
         <h2>Responsive Web App</h2>
         <h5>ux design, visual design,<br>branding and identity</h5>
-        <a href="#"><h4 class="button">View case study</h4></a>
+        <a href="project.html"><h4 class="button">View case study</h4></a>
         <div class="underline"></div>
-        <a href="#"><img src="images/invision.png" alt="Invision" class="invision"></a>
+        <a href="https://invis.io/SQTPOBV67X2"><img src="images/invision.png" alt="Invision" class="invision"></a>
       </div>
       <div class="workImg">
         <img src="images/mockup.png" alt="project image" class="workImg">
@@ -73,7 +79,7 @@
       <div class="workText">
         <h2>Mobile IOS App</h2>
         <h5>ux design, visual design,<br>branding and identity</h5>
-        <a href="#"><h4 class="button">Ask me about it</h4></a>
+        <a href="mailto:corarusk@outlook.com"><h4 class="button">Ask me about it</h4></a>
         <div class="underline"></div>
       </div>
       <img src="images/comingSoon.png" alt="project image" class="workImg">
@@ -90,11 +96,21 @@
         <p>Thanks for visiting! Have questions or want to chat about UX? Let’s connect!</p>
       </div>
         <div class="footerIcons">
-          <a href="#"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+          <a href="mailto:corarusk@outlook.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/cora-rusk/"><i class="fab fa-linkedin-in fa-3x"></i></a>
         </div>
         <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
     </div>
+
+<!-- responsive nav menu dropdown -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').click(function() {
+        $('nav ul').toggleClass('active');
+      })
+    })
+    </script>
 
 
 </body>

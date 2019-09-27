@@ -17,8 +17,6 @@
   }
 }
 
-/* grids ----- */
-
 
 html {
   font-weight: 100;
@@ -30,19 +28,19 @@ html {
 
 body {
   width: 100%;
-  background-color: #111010;
 }
 
 .container {
-  width: 85%;
-  margin: auto;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family:"Poppins", sans-serif;
-
+  width: 100%;
+  background-color: #111010;
 }
 
+header {
+  width: 85%;
+  margin: auto;
+  font-family:"Poppins", sans-serif;
+  background-color: #111010;
+}
 
 main {
   width: 100%;
@@ -112,34 +110,53 @@ p {
 
 
 /*----------- Nav ------------- */
-.nav {
-  height: 18vh;
-  text-align: center;
+nav {
+  width: 100%;
   background-color: #111010;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
-.nav a {
+nav ul {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+nav ul li {
+  list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
-  padding: 40px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
-
-h5.navLabel, h5.navName, h5.navRole {
+nav ul li a:hover {
+  color: #99B0B6;
+}
+nav ul li a {
+  vertical-align: middle;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  text-decoration: none;
+}
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  color: white;
+  display: none;
+  font-size: 3rem;
+}
+h5.navName, h5.navRole, h5.navLabel {
   font-size: 1.6rem;
   color: white;
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   margin:0;
-}
-
+}*/
 h5.navName {
   font-size: 2.2rem;
 }
-
 h5.navRole {
   font-size: 1.4rem;
 }
@@ -166,7 +183,7 @@ h5.navRole {
 
 .landingSlogan {
   position: absolute;
-  bottom: 19rem;
+  bottom: 16rem;
 }
 
 h1.slogan {
@@ -314,9 +331,10 @@ h4.button {
 /*----------- Footer ------------- */
 
 .footer {
-  height: 29.5vh;
-  position: relative;
+  height: 40vh;
   background-color: black;
+  width: 100%;
+  bottom: 0;
   }
 
 .footerText {
@@ -355,22 +373,39 @@ p.copyright {
 }
 
 
+
+
+
 /* Media Queries ---------------------------------- */
 /* -------Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 760px) {
   /* nav and landing -- */
-  .nav a {
-    padding: 1rem;
-    padding-top: 3rem;
+  .toggle {
+    display: block;
+    width: 80%;
+    margin: auto;
   }
-  h5.navLabel {
-    font-size: 1.4rem;
+    nav ul {
+      width: 100%;
+      display: none;
+    }
+    nav ul li {
+      display: block;
+      text-align: center;
+      padding-top: 9rem;
+    }
+    .active {
+      display: block;
+    }
+  .landing img {
+    padding-top: 5rem;
   }
-  h5.navName {
+  h5.navName, h5.navRole, h5.navLabel {
     font-size: 1.8rem;
+    color: white;
   }
   h5.navRole {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .landingSlogan {
     bottom: 22rem;
@@ -389,7 +424,9 @@ p.copyright {
     line-height: 2rem;
   }
   .containerBottom {
-    padding: 2rem;
+    width: 95%;
+    margin: auto;
+    padding: 0;
   }
   .work, .work2, .workText, .workImg, img.workImg {
     display: block;
@@ -446,8 +483,11 @@ p.copyright {
     float: none;
   }
   /* footer -- */
+  .footer {
+    height: 35vh;
+    }
   .footerText {
-    width: 65%;
+    width: 75%;
     margin: auto;
   }
   .footerText > h2 {
@@ -458,32 +498,49 @@ p.copyright {
   }
 }
 
-
 /* -------Tablet*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
   /* nav and landing -- */
-  .nav a {
-    padding: 3rem;
-    padding-top: 5rem;
+  .toggle {
+    display: block;
+    font-size: 5rem;
+    width: 90%;
+    margin: auto;
   }
-  h5.navLabel {
-    font-size: 2.6rem;
-  }
-  h5.navName {
-    font-size: 3.2rem;
-  }
-  h5.navRole {
-    font-size: 2.6rem;
-    padding-top: 1.8rem;
-  }
-  .landingSlogan {
-    bottom: 22rem;
-  }
-  h1.slogan {
-    font-size: 8rem;
-    line-height: 8rem;
-    letter-spacing: .1rem;
-  }
+    nav ul {
+      width: 100%;
+      display: none;
+    }
+    nav ul li {
+      display: block;
+      text-align: center;
+      padding-top: 9rem;
+    }
+    nav ul li a {
+      font-size: 2.8rem;
+    }
+    .active {
+      display: block;
+    }
+    .landing img {
+      padding-top: 5rem;
+      width: 15%;
+    }
+    h5.navName, h5.navRole, h5.navLabel {
+      font-size: 3.2rem;
+      color: white;
+    }
+    h5.navRole, h5.navLabel {
+      font-size: 2.2rem;
+    }
+    .landingSlogan {
+      bottom: 13rem;
+    }
+    h1.slogan {
+      font-size: 9rem;
+      line-height: 8rem;
+      letter-spacing: .1rem;
+    }
   /* project 01 -- */
   h2 {
     font-size: 3.8rem;
@@ -493,7 +550,9 @@ p.copyright {
     line-height: 3rem;
   }
   .containerBottom {
-    padding-top: 2rem;
+    width: 95%;
+    margin: auto;
+    padding: 0;
   }
   .work, .work2, .workText, .workImg, img.workImg {
     display: block;
@@ -551,6 +610,9 @@ p.copyright {
     float: none;
   }
   /* footer -- */
+  .footer {
+    height: 30vh;
+    }
   .footerText {
     width: 65%;
     margin: auto;

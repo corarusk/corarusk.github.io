@@ -18,13 +18,17 @@
 
 <body>
 
-<!-- Nav ------------------------------------------>
-  <div class="nav">
-    <a href="#work"><h5 class="navLabel">Work</h5></a>
-    <a href="#about"><h5 class="navLabel">About</h5></a>
-    <a href="#resume"><h5 class="navLabel">Resume</h5></a>
-    <a href="#contact"><h5 class="navLabel">Contact</h5></a>
-  </div>
+  <nav>
+    <div class="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1x_s9CJdLIRRBjJ1KMCdO9fv7WzSLrrFk/view?usp=sharing">Resume</a></li>
+      <li><a href="mailto:corarusk@outlook.com">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Landing ------------------------------------------>
 <section class="landingContainer">
@@ -32,8 +36,8 @@
         <div class="landingText">
           <img class="obLogo" src="images/obLogo.svg" alt="Open Book Logo">
           <h2>The ultimate teacher resource.</h2>
-          <p>Sought out to reduce teacher shortage, Open Book is<br>a web application concept that makes lesson<br>planning easier for teachers.</p>
-          <div class="protoButton"><a href="#">View Invision Prototype</a></div>
+          <p>Sought out to reduce teacher shortage, Open Book is a web application concept that makes lesson planning easier for teachers.</p>
+          <div class="protoButton"><a href="https://invis.io/SQTPOBV67X2">View Invision Prototype</a></div>
         </div>
         <div class="landingImg">
           <img src="images/previewOne.png" alt="App preview">
@@ -294,7 +298,7 @@
         </div> <!-- column -->
       </div> <!-- row -->
       <div class="deliverableLink">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfppdnyQLWz6xmOZOFuOMBCWTy0ZHu5erpg5qUfc5KVF56ofw/viewform?usp=sf_link">Learn more about the personas ></a>
+        <a href="https://drive.google.com/open?id=1wAG0sJ2d90oIsTHuEWl_egDqmqMDT9mm">Learn more about the personas ></a>
       </div>
 
   </section>
@@ -497,8 +501,10 @@
       </div>
       <div class="deliverableLink">
         <a href="https://drive.google.com/drive/folders/1qA7ZGcSKopp8M8j9FrSUe-skVhnJAdHu?usp=sharing">View the full style guide ></a>
-        <br><br>
+      </div>
+      <div class="deliverableLink">
         <a href="https://drive.google.com/file/d/1X0uKa8kQcslzRQBOF4U7CNptgZSzlFTw/view?usp=sharing">Check out the moodboard ></a>
+      </div>
       </div>
     </div>
 
@@ -552,7 +558,7 @@
             <li><p>There are no complications in the UX</p></li>
             <li><p>The user completes browse, save,<br>and edit task flows with ease</p></li>
           </ul>
-          <div class="protoButton"><a href="#">View Invision Prototype</a></div>
+          <div class="protoButton"><a href="https://invis.io/SQTPOBV67X2">View Invision Prototype</a></div>
         </div>
     </div>
    </section>
@@ -645,17 +651,28 @@
 
 </main>
 
-       <!-- Footer ------------------------------------------>
-           <div class="footer">
-             <div class="footerText">
-               <h2>Get in touch.</h2>
-               <p>Thanks for visiting! Have questions or want to chat<br>about UX? Let’s connect!</p>
-             </div>
-               <div class="footerIcons">
-                 <a href="#"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                 <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
-               </div>
-               <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
-           </div>
+<!-- Footer ------------------------------------------>
+    <div class="footer">
+      <div class="footerText">
+        <h2>Get in touch.</h2>
+        <p>Thanks for visiting! Have questions or want to chat about UX? Let’s connect!</p>
+      </div>
+        <div class="footerIcons">
+          <a href="mailto:corarusk@outlook.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/cora-rusk/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+        </div>
+        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
+    </div>
+
+    <!-- responsive nav menu dropdown -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').click(function() {
+        $('nav ul').toggleClass('active');
+      })
+    })
+    </script>
+
 </body>
 </html>

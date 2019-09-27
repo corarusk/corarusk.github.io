@@ -14,13 +14,17 @@
 
 <body>
 
-<!-- Nav ------------------------------------------>
-    <div class="nav">
-      <a href="#work"><h5 class="navLabel">Work</h5></a>
-      <a href="#about"><h5 class="navLabel">About</h5></a>
-      <a href="#resume"><h5 class="navLabel">Resume</h5></a>
-      <a href="#contact"><h5 class="navLabel">Contact</h5></a>
+  <nav>
+    <div class="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
     </div>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1x_s9CJdLIRRBjJ1KMCdO9fv7WzSLrrFk/view?usp=sharing">Resume</a></li>
+      <li><a href="mailto:corarusk@outlook.com">Contact</a></li>
+    </ul>
+  </nav>
 
 <!-- Landing ------------------------------------------>
     <section class="landingContainer">
@@ -99,17 +103,28 @@
   </div>
 
   <!-- Footer ------------------------------------------>
-            <div class="footer">
-              <div class="footerText">
-                <h2>Get in touch.</h2>
-                <p>Thanks for visiting! Have questions or want to chat<br>about UX? Let’s connect!</p>
-              </div>
-                <div class="footerIcons">
-                  <a href="#"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
-                </div>
-                <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
-            </div>
+      <div class="footer">
+        <div class="footerText">
+          <h2>Get in touch.</h2>
+          <p>Thanks for visiting! Have questions or want to chat about UX? Let’s connect!</p>
+        </div>
+          <div class="footerIcons">
+            <a href="mailto:corarusk@outlook.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/cora-rusk/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+          </div>
+          <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2019 Cora Rusk | Designed and developed by Cora Rusk</p>
+      </div>
 </main>
+
+<!-- responsive nav menu dropdown -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').click(function() {
+        $('nav ul').toggleClass('active');
+      })
+    })
+    </script>
+
 </body>
 </html>

@@ -382,7 +382,11 @@ p.copyright {
 /* -------Mobile */
 @media screen and (min-width: 300px) and (max-width: 760px) {
   /* nav and landing -- */
-  .toggle {
+  nav {
+    padding-bottom: 4rem;
+  }
+
+    .toggle {
     display: block;
     width: 80%;
     margin: auto;
@@ -410,7 +414,7 @@ p.copyright {
     font-size: 1.4rem;
   }
   .landingSlogan {
-    bottom: 22rem;
+    bottom: 15rem;
   }
   h1.slogan {
     font-size: 5rem;

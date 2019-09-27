@@ -383,7 +383,7 @@ p.copyright {
 @media screen and (min-width: 300px) and (max-width: 760px) {
   /* nav and landing -- */
   nav {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
     .toggle {
     display: block;
@@ -403,7 +403,7 @@ p.copyright {
       display: block;
     }
   .landing img {
-    padding-top: 1rem;
+    padding-top: 0;
   }
   h5.navName, h5.navRole, h5.navLabel {
     font-size: 1.8rem;

@@ -9,11 +9,16 @@
   background: transparent;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+@media screen and (min-width: 900px) {
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
+
+/* grids ----- */
+
 
 html {
   font-weight: 100;
@@ -31,20 +36,17 @@ body {
 .container {
   width: 85%;
   margin: auto;
-  /*background-image: url();*/
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   font-family:"Poppins", sans-serif;
+
 }
+
 
 main {
   width: 100%;
   margin: auto;
-  /*background-image: url();*/
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
   font-family:"Poppins", sans-serif;
   background-color: white;
 }
@@ -52,7 +54,6 @@ main {
 .containerBottom {
   width: 85%;
   margin: auto;
-  /*background-image: url();*/
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,7 +113,7 @@ p {
 
 /*----------- Nav ------------- */
 .nav {
-  height: 100px;
+  height: 18vh;
   text-align: center;
   background-color: #111010;
 }
@@ -155,7 +156,7 @@ h5.navRole {
 .landingName {
   padding-top: .5rem;
   text-align: center;
-  padding-bottom: 9rem;
+  padding-bottom: 6rem;
 }
 
 .landingName img {
@@ -169,7 +170,7 @@ h5.navRole {
 }
 
 h1.slogan {
-  font-size: 8.5rem;
+  font-size: 9rem;
   font-weight: 400;
   color: white;
   font-family: "Abril Fatface";
@@ -221,6 +222,7 @@ h1.slogan {
 .work > .workText {
   position: absolute;
   margin-top: 4.25rem;
+  margin-left: 6rem;
 }
 
 .work > .workText > .underline {
@@ -231,7 +233,13 @@ h1.slogan {
 }
 
 .work > .workImg {
-  width: 60%;
+  width: 55%;
+  float: right;
+  margin: auto;
+}
+
+.work > img.workImg {
+  width: 100%;
   float: right;
 }
 
@@ -265,7 +273,7 @@ img.invision {
 .work2 > .workText {
   position: absolute;
   margin-top: 4.25rem;
-  right: 200px;
+  right: 25rem;
   text-align: left;
 }
 
@@ -278,10 +286,14 @@ img.invision {
 }
 
 .work2 > .workImg {
-  width: 50%;
+  width: 55%;
   float: left;
 }
 
+.work2 > img.workImg {
+  width: 45%;
+  float: left;
+}
 
 
 
@@ -309,6 +321,8 @@ h4.button {
 
 .footerText {
   text-align: center;
+  width: 35%;
+  margin: auto;
 }
 
 .footerText > h2 {
@@ -338,4 +352,214 @@ p.copyright {
   font-size: 1.2rem;
   text-align: center;
   margin: 0;
+}
+
+
+/* Media Queries ---------------------------------- */
+/* -------Mobile */
+@media screen and (max-width: 600px) {
+  /* nav and landing -- */
+  .nav a {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  h5.navLabel {
+    font-size: 1.4rem;
+  }
+  h5.navName {
+    font-size: 1.8rem;
+  }
+  h5.navRole {
+    font-size: 1.2rem;
+  }
+  .landingSlogan {
+    bottom: 22rem;
+  }
+  h1.slogan {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: .1rem;
+  }
+  /* project 01 -- */
+  h2 {
+    font-size: 2.6rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .containerBottom {
+    padding: 2rem;
+  }
+  .work, .work2, .workText, .workImg, img.workImg {
+    display: block;
+    text-align: center;
+  }
+  .work > .workText {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: static;
+    display: block;
+  }
+  .work > .workText > .underline {
+    width: 12rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .work > .workImg {
+    width: 100%;
+    float: none;
+  }
+  img.workImg {
+    width: 100%;
+  }
+  img.invision {
+    padding-bottom: 3.5rem;
+  }
+  h4.button {
+    padding-top: 5rem;
+    margin: 0;
+  }
+  /* project 02 -- */
+  .work2 > .workText {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: static;
+    display: block;
+  }
+  .work2 > .workText > .underline {
+    width: 12rem;
+    margin: auto;
+    margin-top: 1rem;
+    float: none;
+    margin-bottom: 4rem;
+  }
+  .work2 > .workImg {
+    width: 100%;
+    float: none;
+  }
+  .work2 > img.workImg {
+    width: 100%;
+    float: none;
+  }
+  /* footer -- */
+  .footerText {
+    width: 65%;
+    margin: auto;
+  }
+  .footerText > h2 {
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* -------Tablet*/
+@media screen and (max-width: 800px) {
+  /* nav and landing -- */
+  .nav a {
+    padding: 3rem;
+    padding-top: 5rem;
+  }
+  h5.navLabel {
+    font-size: 2.6rem;
+  }
+  h5.navName {
+    font-size: 3.2rem;
+  }
+  h5.navRole {
+    font-size: 2.6rem;
+    padding-top: 1.8rem;
+  }
+  .landingSlogan {
+    bottom: 22rem;
+  }
+  h1.slogan {
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: .1rem;
+  }
+  /* project 01 -- */
+  h2 {
+    font-size: 3.8rem;
+  }
+  h5 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .containerBottom {
+    padding-top: 2rem;
+  }
+  .work, .work2, .workText, .workImg, img.workImg {
+    display: block;
+    text-align: center;
+  }
+  .work > .workText {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: static;
+    display: block;
+  }
+  .work > .workText > .underline {
+    width: 12rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .work > .workImg {
+    width: 100%;
+    float: none;
+  }
+  img.workImg {
+    width: 100%;
+  }
+  img.invision {
+    padding-bottom: 3.5rem;
+  }
+  h4.button {
+    padding-top: 5rem;
+    margin: 0;
+    font-size: 2.6rem;
+  }
+  /* project 02 -- */
+  .work2 > .workText {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: static;
+    display: block;
+  }
+  .work2 > .workText > .underline {
+    width: 12rem;
+    margin: auto;
+    margin-top: 1rem;
+    float: none;
+    margin-bottom: 4rem;
+  }
+  .work2 > .workImg {
+    width: 100%;
+    float: none;
+  }
+  .work2 > img.workImg {
+    width: 100%;
+    float: none;
+  }
+  /* footer -- */
+  .footerText {
+    width: 65%;
+    margin: auto;
+  }
+  .footerText > h2 {
+    font-size: 4.8rem;
+  }
+  p {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+  }
 }

@@ -594,6 +594,10 @@ p.copyright {
 /* ------------Mobile */
 @media screen and (min-width: 300px) and (max-width: 768px) {
   /* nav and landing -- */
+    nav {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
     .toggle {
       display: block;
       width: 80%;
@@ -668,8 +672,8 @@ p.copyright {
     float:none;
     width: 80%;
     margin: auto;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .columnComp {
     float:none;
@@ -679,7 +683,10 @@ p.copyright {
     padding-bottom: 0;
   }
   .columnComp img {
-    padding-top: 8rem;
+    padding-top: 5rem;
+  }
+  .rowComp {
+    margin-bottom: 2rem;
   }
   /*user personas */
   .sectionText {
@@ -694,6 +701,13 @@ p.copyright {
     padding-top: 3rem;
     padding-left: 0;
     padding-right:0;
+  }
+  .columnImg img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .textLeft ul {
+    padding-bottom: 3rem;
   }
   .deliverableLink {
     width: 85%;
@@ -727,6 +741,7 @@ p.copyright {
     width: 95%;
     margin:auto;
   }
+  /*  key takeaways */
   /* footer -- */
   .footer {
     height: 35vh;

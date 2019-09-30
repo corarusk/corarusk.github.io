@@ -13,7 +13,7 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
     <div class="landing">
         <div class="landingText">
           <img class="obLogo" src="images/obLogo.svg" alt="Open Book Logo">
-          <h2>The ultimate teacher resource.</h2>
+          <h2 id="obLogo">The ultimate teacher resource.</h2>
           <p>Sought out to reduce teacher shortage, Open Book is a web application concept that makes lesson planning easier for teachers.</p>
           <div class="protoButton"><a href="https://invis.io/SQTPOBV67X2">View Invision Prototype</a></div>
         </div>
@@ -133,9 +133,9 @@
         <p>A responsive web application where users can find ready-to-use resources and collaborate remotely with their team to complete tasks.</p>
       </div>
       <div class="solutionImg">
-        <img src="images/solutionOne.png" alt="Unlimited Resources">
-        <img src="images/solutionTwo.png" alt="Instantly Edit">
-        <img src="images/solutionThree.png" alt="Share To-do Lists">
+        <img src="images/solution1.svg" alt="Unlimited Resources">
+        <img src="images/solution2.svg" alt="Instantly Edit">
+        <img src="images/solution3.svg" alt="Share To-do Lists">
       </div>
     </div>
 
@@ -194,7 +194,7 @@
             <li><p>Quality of resources</p></li>
           </ul>
           <div class="deliverableLink">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfppdnyQLWz6xmOZOFuOMBCWTy0ZHu5erpg5qUfc5KVF56ofw/viewform?usp=sf_link">Take the survey ></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfppdnyQLWz6xmOZOFuOMBCWTy0ZHu5erpg5qUfc5KVF56ofw/viewform?usp=sf_link">Take the survey</a>
           </div>
         </div>
         </div>
@@ -296,8 +296,8 @@
           </div>
         </div> <!-- column -->
       </div> <!-- row -->
-      <div class="deliverableLink">
-        <a href="https://drive.google.com/open?id=1wAG0sJ2d90oIsTHuEWl_egDqmqMDT9mm">Learn more about the personas ></a>
+      <div class="deliverableLinkLarge">
+        <a href="https://drive.google.com/open?id=1wAG0sJ2d90oIsTHuEWl_egDqmqMDT9mm">Learn more about the personas</a>
       </div>
 
   </section>
@@ -362,20 +362,22 @@
           <h2>Flows and Sitemap</h2>
           <div class="underline"></div>
         </div>
-        <div class="sectionImg">
+
           <h4>Flows</h4>
           <p>Flow diagrams for each high priority task were created to demonstrate how the user will navigate through various pages: Landing, Onboarding, and Home. First sketching, then degital. These flows are crucial to identifying key actions within the app and which screens to focus on first.  At this stage, they’re far from set and stone, but lay a solid foundation.</p>
-          <img src="images/flows.png" alt="User flows">
-        </div>
+          <div class="sectionImg">
+            <img src="images/flows.png" alt="User flows">
+          </div>
 
         <!-- divider inside section -->
         <div class="dividerInside"></div>
 
-        <div class="sectionImg">
-          <h4>Sitemap</h4>
+
+          <h4>Sitemap & content strategy</h4>
           <p>I then used the research data, user stories, and user flows to create a sitemap in order to organize each destination in the user flows. The sitemap was used as an outline to create the content strategy, which helped me focus on clarity and lay down a solid foundational structure of the project before moving forward.</p>
-          <img src="images/sitemap.png" alt="User flows">
-        </div>
+          <div class="sectionImg">
+            <img src="images/sitemap.png" alt="User flows">
+          </div>
       </div>
     </section>
 
@@ -386,19 +388,19 @@
         <h2>Wireframes</h2>
         <div class="underline"></div>
       </div>
-
-      <div class="sectionImg">
         <h4>LOW FIDELITY</h4>
         <p>With now a clear focus and solid foundation, I began sketching out pages within the user flows in low fidelity. I always start with pencil and a sketchpad to allow for rapid iterations of wireframes.</p>
-        <img src="images/wireframeOne.png" alt="Dashboard Wireframe Sketches">
-        <img src="images/wireframeTwo.png" alt="Card Wireframe Sketches">
-      </div>
-
-      <div class="sectionImg">
+        <div class="smallSectionImg">
+          <img src="images/wireframeOne.png" alt="Dashboard Wireframe Sketches">
+          <img src="images/wireframeTwo.png" alt="Card Wireframe Sketches">
+        </div>
+        <!-- divider inside section -->
+        <div class="dividerInside"></div>
         <h4>HIGH FIDELITY</h4>
         <p>After tweaking and adjusting, I brought the wireframes to life in Figma by creating high fidelity digital versions of the wireframes for testing purposes in order to identify if there are any complications with the UX.</p>
-        <img src="images/wireframeThree.png" alt="Digital Wireframes">
-      </div>
+        <div class="sectionImg">
+          <img src="images/wireframeThree.png" alt="Digital Wireframes">
+        </div>
     </div>
 
     <!-- divider -->
@@ -437,8 +439,8 @@
         <h4>after testing</h4>
         <br><p>Landing > Dashboard > Browse</p>
         <img src="images/landingTwo.png" alt="Iteration Landing Page">
-        <img src="images/browseTwo.png" alt="Iteration Browse Page">
         <img src="images/dashTwo.png" alt="Iteration Dashboard Page">
+        <img src="images/browseTwo.png" alt="Iteration Browse Page">
       </section>
 
       <!-- divider -->
@@ -474,8 +476,9 @@
         <div class="underline"></div>
       </div>
 
-      <div class="sectionImg">
         <p>The name Open Book came about when thinking of a phrase educators use when giving their students a test. When a test is “Open Book” it means that you are permitted to use any resources available to you to complete the assessment. An open book test requires a lot of preparation and studying beforehand so that you can find the information quickly.<br>Many times this process involves sticking tabs on pages to save important information, which is why Open Book’s logo includes 3 stacked tabs symbolizing preparation and collaboration.</p>
+
+      <div class="sectionImg">
         <img src="images/logoDesign.png" style="max-width:100%;" alt="Logo Design">
       </div>
 
@@ -492,19 +495,16 @@
       <h4>typography</h4>
       <p>Montserrat and Open Sans, geometric sans-serif typefaces, are used to create high readability with little distraction.<br>The dark grey font paired with light blue and white elements creates a clean, simplistic atmosphere with a primary purpose - to foster productivity.</p>
       <div class="centerText">
-          <h4>HEADER/MONTSERRAT</h4>
-          <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-          <br><br><br>
-          <h4>BODY/OPEN SANS</h4>
-          <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <img src="images/typeface.png" alt="Typeface Example">
       </div>
-      <div class="deliverableLink">
-        <a href="https://drive.google.com/drive/folders/1qA7ZGcSKopp8M8j9FrSUe-skVhnJAdHu?usp=sharing">View the full style guide ></a>
+
+      <div class="deliverableLinkMedium">
+        <a href="https://drive.google.com/drive/folders/1qA7ZGcSKopp8M8j9FrSUe-skVhnJAdHu?usp=sharing">View the full style guide</a>
       </div>
-      <div class="deliverableLink">
-        <a href="https://drive.google.com/file/d/1X0uKa8kQcslzRQBOF4U7CNptgZSzlFTw/view?usp=sharing">Check out the moodboard ></a>
+      <div class="deliverableLinkMedium">
+        <a href="https://drive.google.com/file/d/1X0uKa8kQcslzRQBOF4U7CNptgZSzlFTw/view?usp=sharing">Check out the moodboard</a>
       </div>
-      </div>
+    </div>
     </div>
 
 
@@ -522,22 +522,22 @@
        <div class="underline"></div>
      </div>
 
-     <div class="sectionImg">
        <h4>RECENT DOCUMENTS</h4>
        <p>The initial design included a list view in order to make the Dashboard more compact. A preference test was given to be sure that this decision aligns with the users’ desires and needs.<br>The layout decisions of the Recent Documents section is confirmed as data shows that users do in fact appreciate the list view over the grid view. User feedback suggests that the list view provides better usability when locating files and folders recently opened.</p>
-       <img src="images/prefOne.png" alt="Preference Test 1">
-     </div>
+      <div class="sectionImg">
+        <img src="images/prefOne.png" alt="Preference Test 1">
+      </div>
 
-     <div class="sectionImg">
        <h4>mobile navigation</h4>
        <p>While the original iteration is clean and simple, data insists that users actually prefer the light blue background color of the secondary navigation because it breaks up the navigation. I decided to align the design with the feedback because it will increase the usability and more closely resembles the desktop version.</p>
-       <img src="images/prefTwo.png" alt="Preference Test 2">
-     </div>
+      <div class="sectionImg">
+        <img src="images/prefTwo.png" alt="Preference Test 2">
+      </div>
 
-     <div class="sectionImg">
        <h4>card</h4>
        <p>The initial design includes an angled edge that resembles the same shape as the logo tabs, yet rotated 90 degrees. The purpose of this was to add a unique element that played off of the Open Book logo. While this all seems like a clever idea, testing actually proved that users appreciate the straight edge versus angled.<br>Feedback suggests that people care more about the content being clean and visible and not so much about the “unique” design.</p>
-       <img src="images/prefThree.png" alt="Preference Test 3">
+    <div class="sectionImg">
+      <img src="images/prefThree.png" alt="Preference Test 3">
      </div>
    </div>
 
@@ -565,41 +565,40 @@
    <!-- Key Takeaways -->
    <div class="section">
      <div class="sectionTitle">
-       <i class="fa fa-key" aria-hidden="true"></i>
-       <h2 class="keyTakeaways">Key Takeaways</h2>
-       <div class="keyUnderline"></div>
+       <i class="fa fa-exchange-alt" aria-hidden="true"></i>
+       <h2>Iterations</h2>
+       <div class="underline"></div>
      </div>
-
-     <div class="sectionImg">
        <p><span class="takeawayLabel">REDESIGN THE LANDING HERO AND FIRST SECTION </span>of the landing page to make users understand the concept of Open Book easier.</p>
-       <img class="iterations" src="images/landingBefore.png" alt="Landing Before">
-       <img class="iterations" src="images/landingAfter.png" alt="Landing After">
+    <div class="beforeAfterImg">
+      <img src="images/landingBefore.png" alt="Landing Before">
+       <img src="images/landingAfter.png" alt="Landing After">
      </div>
 
       <!-- divider inside section -->
        <div class="dividerInside"></div>
 
-       <div class="sectionImg">
          <p><span class="takeawayLabel">Add subtle pops of red  </span>throughout the dashboard to increase cohesiveness.</p>
-         <img class="iterations" src="images/dashBefore.png" alt="Dashboard Before">
+      <div class="beforeAfterImg">
+        <img class="iterations" src="images/dashBefore.png" alt="Dashboard Before">
          <img class="iterations" src="images/dashAfter.png" alt="Dashboard After">
        </div>
 
        <!-- divider inside section -->
         <div class="dividerInside"></div>
 
-       <div class="sectionImg">
          <p><span class="takeawayLabel">redesign the filter buttons  </span>to be more intuitive and user-friendly.</p>
-         <img class="iterations" src="images/filters.png" alt="Filter Before and After">
+      <div class="beforeAfterImg">
+        <img class="iterations" src="images/filters.png" alt="Filter Before and After">
        </div>
 
        <!-- divider inside section -->
         <div class="dividerInside"></div>
 
-       <div class="sectionImg">
         <p><span class="takeawayLabel">decrease information on sign up form  </span>to enlarge input fields and shorten the process.</p>
-        <img class="iterations" src="images/signupBefore.png" alt="Sign up Before">
-        <img class="iterations" src="images/signupAfter.png" alt="Sign up after">
+        <div class="beforeAfterImg">
+          <img class="iterations" src="images/signupBefore.png" alt="Sign up Before">
+          <img class="iterations" src="images/signupAfter.png" alt="Sign up after">
        </div>
    </div> <!-- section -->
 
@@ -613,7 +612,7 @@
       <div class="sectionText">
         <h4>A MONUMENTAL STEPPING STONE IN MY CAREER</h4>
         <p>From ideation to completion, Open Book has undergone many changes and iterations. This project started without a target audience, product name, or even a problem in mind, and ended with an established solution. Taking a vague concept and turning it into tangible website on my own for the first time was at times overwhelming, but a great learning experience and monumental to my career as a Designer.</p>
-        <br><br>
+        <br><br><br>
         <h4>NEXT STEPS FOR THIS PROJECT</h4>
         <p>The deliverables are packaged up nicely for the development team, with all of the essential elements exported as both pngs and svgs and organized neatly in separate folders.<br>I would have liked to work more on the animation, but due to a time constraint, I stuck to the project MVP and focused on the solution. If time were free, next steps for this product would begin with adding subtle and effective microinteractions and designing a mobile native app version.</p>
         <!-- divider inside section -->

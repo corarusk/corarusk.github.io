@@ -17,7 +17,6 @@
   }
 }
 
-
 html {
   font-weight: 100;
   font-size: 10px;
@@ -28,9 +27,10 @@ html {
 
 body {
   width: 100%;
+  background-color: white;
 }
 
-.container {
+.homeContainer {
   width: 100%;
   background-color: #111010;
 }
@@ -57,7 +57,10 @@ main {
   background-repeat: no-repeat;
   font-family:"Poppins", sans-serif;
   background-color: white;
-  padding: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 h1 {
@@ -67,27 +70,36 @@ h1 {
   font-family: "Abril Fatface";
 }
 
-h2 {
+h2.project, h2.aboutTitle, h2.footerTitle {
   font-size: 3.2rem;
+  font-weight: 800;
+  color: #202020;
+  font-family: "Abril Fatface";
+}
+
+/* project section title */
+h2 {
+  font-size: 2.8rem;
   font-weight: 400;
   color: #202020;
   font-family: "Abril Fatface";
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-size: 2.2rem;
   margin-top: 10px;
   color: #202020;
+  font-family: "Abril Fatface";
+  margin-bottom: 1em;
 }
 
 h4 {
   font-size: 1.8rem;
-  color: #202020;
+  color: #A6544A;
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   font-weight: 800;
-  margin-top: 1em;
 }
 
 h5 {
@@ -101,7 +113,7 @@ h5 {
 
 p {
   color: #202020;
-  margin-top: 1.9rem;
+  margin-top: 1rem;
   font-size: 1.8rem;
   font-family:"Poppins", sans-serif;
   font-weight: normal;
@@ -109,12 +121,12 @@ p {
 }
 
 
-/*----------- Nav ------------- */
+/*----------- Nav ALL ------------- */
 nav {
   width: 100%;
   background-color: #111010;
   padding-top: 4rem;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 nav ul {
@@ -162,9 +174,9 @@ h5.navRole {
 }
 
 
+/*----------- HOME PAGE------------------------ */
 /*----------- Landing ------------- */
-
-.landing {
+.landingHome {
   height: 100vh;
   position: relative;
   background-color: #111010;
@@ -210,7 +222,6 @@ h1.slogan {
   padding-top: 1rem;
 }
 
-
 /*----------- Add skills section to html later
 .skills {
   text-align: center;
@@ -229,18 +240,17 @@ h1.slogan {
 
 
 
-
 /*----------- Project 01 ------------- */
 .work {
   width: 100%;
   position: relative;
-  margin-bottom: 8em;
-  margin-top: 8em;
+  margin-bottom: 4em;
+  margin-top: 4em;
 }
 
 .work > .workText {
   position: absolute;
-  margin-top: 4.25rem;
+  padding-top: 6rem;
   margin-left: 6rem;
 }
 
@@ -268,8 +278,8 @@ img.invision {
 }
 
 
-/*----------- Divider ------------- */
-.divider {
+/*----------- Dividers ALL ------------- */
+.homeDivider, .divider, .dividerInside, .dividerInsideLast {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -278,6 +288,17 @@ img.invision {
   border-style: inset;
   height: 2px;
   background-color: #E1E1E0;
+  width: 100%;
+}
+.divider {
+  width: 85%;
+}
+.dividerInsideLast {
+  margin-top: 9rem;
+}
+.dividerInside {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -285,14 +306,14 @@ img.invision {
 .work2 {
   width: 100%;
   position: relative;
-  margin-bottom: 8em;
-  margin-top: 8em;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
 }
 
 .work2 > .workText {
   position: absolute;
   margin-top: 4.25rem;
-  right: 25rem;
+  right: 20rem;
   text-align: left;
 }
 
@@ -312,6 +333,7 @@ img.invision {
 .work2 > img.workImg {
   width: 45%;
   float: left;
+  margin-left: 6rem;
 }
 
 
@@ -327,13 +349,16 @@ h4.button {
   margin-top: 2em;
   color: #202020;
 }
+h4.button:hover {
+  color: #99B0B6;
+}
 
 
 
-/*----------- Footer ------------- */
+/*----------- Footer ALL ------------- */
 
 .footer {
-  height: 40vh;
+  height: 27rem;
   background-color: black;
   width: 100%;
   bottom: 0;
@@ -347,9 +372,10 @@ h4.button {
 
 .footerText > h2 {
   color: #A6544A;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   padding-top: 3.8rem;
   margin-bottom: 0;
+  letter-spacing: 0.05rem;
 }
 
 .footerText > p {
@@ -372,8 +398,460 @@ p.copyright {
   font-size: 1.2rem;
   text-align: center;
   margin: 0;
+  margin-top: 1rem;
 }
 
+
+/* ------ABOUT PAGE ------------------------ */
+/*----------- Landing ------------- */
+.landingAbout {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+  background-image: url("../images/aboutPic.png");
+  background-color: #110010;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landingAboutContainer {
+  height: 100vh;
+  position: relative;
+  background-color: #110010;
+}
+.landingQuote {
+  padding-top: 9rem;
+}
+/* about quote */
+h3#quote {
+  color: white;
+  opacity: 0.5;
+  font-size: 2.2rem;
+  font-family:"Poppins", sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 30px;
+}
+
+/*----------- Introduction ------------- */
+.aboutSection {
+  width: 65%;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.iAm {
+  color: #A6544A;
+}
+.box {
+  border: 1px solid #E1E1E0;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.AboutSectionText {
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/*----------- My Story ------------- */
+.greyContainer {
+  background-color: #efefef;
+}
+.sectionFirst {
+  width: 100%;
+  margin: auto;
+  padding-top: 4rem;
+}
+.label {
+  font-size: 1.8rem;
+  color: #A6544A;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: 800;
+}
+.aboutDivider {
+  display: block;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-style: inset;
+  height: 3px;
+  background-color: #A6544A;
+  width: 40%;
+}
+.subSection {
+  width: 65%;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+.indent {
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.aboutUnderline {
+  background-color: #99B0B6;
+  height: 3px;
+  width: 130px;
+  margin-top: .6rem;
+}
+.lastAboutSection {
+  width: 65%;
+  margin: auto;
+  padding-top: 8rem;
+  padding-bottom: 13rem;
+}
+
+
+/* PROJECT PAGE ----------------------------------------------*/
+/*----------- General------------- */
+.textLeft, .textLeft ul {
+  text-align: left;
+  list-style-type: disc;
+}
+.section {
+  width: 60%;
+  margin: auto;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+/* ------- Section Names */
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sectionTitle i {
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  color: #A6544A;
+}
+.sectionTitle > .underline {
+  background-color: #A6544A;
+  height: 3px;
+  width: 130px;
+  margin: auto;
+  text-align: center;
+}
+/* Key Takeaways Section */
+.takeawayText ul {
+  list-style-type: disc;
+}
+.takeawayLabel {
+  color: #A6544A;
+  text-transform: uppercase;
+}
+h2.keyTakeaways {
+  color: #A6544A;
+}
+.keyUnderline {
+  background-color: #111010;
+  height: 3px;
+  width: 130px;
+  margin: auto;
+  text-align: center;
+}
+/*-- Phase 1-5 */
+.phase {
+  background-color: #111010;
+  text-align: center;
+  padding: 2rem;
+}
+/* large images */
+.sectionImg {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+.sectionImg img {
+  width: 100%;
+  margin: auto;
+}
+
+/*--- Landing---------------------- */
+.landingContainer {
+  height: 115vh;
+  position: relative;
+  background-image: url("../images/teacherPower.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  padding-top: 5rem;
+  text-align: center;
+  height: 100vh;
+}
+.landing img {
+  width: 270px;
+  left:0;
+  right:0;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+.landingImg {
+    margin-top: 8rem;
+}
+.obLogo {
+  padding: 4rem;
+}
+.landingText {
+  width: 45%;
+  margin: auto;
+}
+/* prototype button */
+.protoButton {
+  margin: auto;
+  margin-top: 6rem;
+  background-color: #111010;
+  border: none;
+  padding: 14px 60px;
+  width: 20rem;
+  box-shadow: 5.09302px 10.186px 12.7326px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.protoButton a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+}
+/*----- Summary ---------------------- */
+/*----- Roles, Deliverables, Specs */
+.summaryContainer {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+}
+.row {
+  margin-top: 13rem;
+  margin-bottom: 10rem;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----- Problem */
+.problemContainer {
+  width: 100%;
+  background-color: #efefef;
+}
+/*----- Solution */
+.solutionImg {
+  margin-top: 5rem;
+  text-align: center;
+}
+.solutionImg img {
+  width: 30%;
+  margin: auto;
+}
+/*------- Discovery and Research ---------------------- */
+/*----- User Survey */
+h1.percent {
+  font-size: 4.5rem;
+}
+.columnPercent {
+  float: left;
+  width: 15%;
+  text-align: center;
+  margin: auto;
+  padding-left: 9.16%;
+  padding-right: 9.16%;
+  padding-top: 0;
+}
+.surveyContainer {
+  width: 100%;
+  margin: auto;
+  background-color: #efefef;
+}
+.surveyText {
+  text-align: center;
+  margin-top: 6rem;
+}
+.row {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+.challenges {
+  margin-top: 8rem;
+}
+/*----- Competitive Analysis */
+.compContainer {
+  width: 100%;
+  margin: auto;
+}
+.columnComp {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+  padding-left: 4.15%;
+  padding-right: 4.15%;
+  padding-top: 0;
+}
+.rowComp {
+  margin-top: 5rem;
+  margin-bottom:9rem;
+}
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----- User Personas */
+.personaContainer {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 9rem;
+}
+.sectionText {
+  width: 60%;
+  margin: auto;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+.rowPersona {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.columnPersona {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0;
+}
+.columnImg img {
+  width: 49%;
+  position: relative;
+  vertical-align: middle;
+}
+.textLeft > h4 {
+  padding-top: 4rem;
+}
+.textLeft, .textLeft ul {
+  text-align: left;
+  list-style-type: disc;
+}
+.rowPersona:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+/*----Information Architecture ------------- */
+/*----- User Stories */
+.centerText {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+/*----- Flows and Sitemap */
+.flowContainer {
+  width: 100%;
+  background-color: #EFEFEF;
+}
+/* wireframes */
+.smallSectionImg {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+.smallSectionImg img {
+  width: 48%;
+  margin: auto;
+}
+/*------- usability tests */
+#testingSection {
+  padding-bottom: 2rem;
+}
+.testingImg img {
+  width: 30%;
+  padding: 1.5%;
+}
+.testingImg {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+#last {
+    padding-bottom: 5rem;
+}
+/*------- brand identity */
+/* deliverable button */
+.deliverableLink, .deliverableLinkLarge, .deliverableLinkMedium {
+  margin: auto;
+  margin-top: 6rem;
+  background-color: #ffffff;
+  border: 2px solid #A6544A;
+  padding: 14px 60px;
+  width: 20rem;
+  box-shadow: 5.09302px 10.186px 12.7326px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  text-align: center;
+}
+.deliverableLinkLarge, .deliverableLinkMedium {
+  padding: 14px 22px;
+  width: 27rem;
+}
+.deliverableLink a, .deliverableLinkLarge a, .deliverableLinkMedium a {
+  text-align: center;
+  text-decoration: none;
+  color: #A6544A;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+}
+/*------- pref testing
+N/A
+*/
+/*------- prototype / key takeaways images */
+
+.beforeAfterImg {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.beforeAfterImg img {
+  width: 47%;
+  padding: 1.4%;
+  margin: auto;
+}
+/*----- Reflection ------------- */
+#lastSection {
+  padding: 3rem;
+}
 
 
 
@@ -383,7 +861,8 @@ p.copyright {
 @media screen and (min-width: 300px) and (max-width: 760px) {
   /* nav and landing -- */
   nav {
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
     .toggle {
     display: block;
@@ -420,8 +899,9 @@ p.copyright {
     line-height: 5rem;
     letter-spacing: .1rem;
   }
+
   /* project 01 -- */
-  h2 {
+  h2.project, h2.aboutTitle, h2.footerTitle {
     font-size: 2.6rem;
   }
   h5 {
@@ -486,10 +966,12 @@ p.copyright {
   .work2 > img.workImg {
     width: 100%;
     float: none;
+    margin-left: 0;
   }
   /* footer -- */
   .footer {
-    height: 35vh;
+    height: 29rem;
+    bottom: 0;
     }
   .footerText {
     width: 75%;
@@ -498,14 +980,202 @@ p.copyright {
   .footerText > h2 {
     font-size: 3.6rem;
   }
-  p {
+  .footerText > p {
     font-size: 1.6rem;
+  }
+  /* ABOUT PAGE ----------- */
+  .landingAbout {
+  height: 48vh;
+  width: 100%;
+  background-size: cover;
+  }
+  .landingAboutContainer {
+  height: 48vh;
+  }
+
+  h3#quote {
+    font-size: 1.6rem;
+  }
+  .landingQuote {
+    padding-top: 7rem;
+  }
+  /* Introduction and my story-- */
+  .aboutSection, .subSection, .lastAboutSection {
+    width: 90%;
+  }
+  .box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .aboutSectionText {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  /* PROJECT PAGE -------------------------- */
+  .landingContainer {
+  height: 115vh;
+  background-size: cover;
+  width: 100%;
+  }
+  .landing {
+    height: 100vh;
+    width: 100%;
+  }
+  .landing img {
+    width: 47%;
+    margin: auto;
+    padding-left: 2%;
+  }
+  .landingImg {
+    margin-top: 3rem;
+  }
+  img.obLogo {
+    width: 60%;
+    margin: auto;
+  }
+  .landingText {
+    width: 80%;
+    margin: auto;
+  }
+  /* prototype button */
+  .protoButton {
+    margin-top: 4rem;
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+  /*Roles, Deliverables, Specs */
+  .column {
+    float:none;
+    width: 90%;
+    margin: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  /*Sections */
+  .section {
+    width: 85%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sectionTitle > .underline {
+    margin-bottom: 4rem;
+  }
+  .solutionImg {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .solutionImg img {
+    width: 60%;
+    padding-top: 1.5rem;
+  }
+  /* user survey & comp analysis */
+  .columnPercent {
+    float:none;
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .columnComp {
+    float:none;
+    width: 70%;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .columnComp img {
+    padding-top: 5rem;
+  }
+  .rowComp {
+    margin-bottom: 2rem;
+  }
+  /*user personas */
+  .sectionText {
+    width: 85%;
+    padding-bottom: 2rem;
+  }
+  .columnPersona {
+    float:none;
+    width: 95%;
+    margin: auto;
+    padding-top: 0;
+    padding-top: 3rem;
+    padding-left: 0;
+    padding-right:0;
+  }
+  .textLeft > h4 {
+  padding-top: 2rem;
+}
+  .columnImg img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .textLeft ul {
+    padding-bottom: 3rem;
+  }
+  /* deliverable button */
+  .deliverableLink, .deliverableLinkLarge, .deliverableLinkMedium {
+    margin-top: 4rem;
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+  .deliverableLinkMedium {
+    width: 26rem;
+  }
+  .deliverableLinkLarge {
+    width: 29rem;
+  }
+  /* usability tests */
+  .testingImg img {
+    width: 95%;
+    margin:auto;
+    padding-bottom: 4rem;
+  }
+  /* concept & identity */
+  .centerText img {
+    width: 90%;
+    margin: auto;
+  }
+  /* pref tests */
+  .sectionImg {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  /*-- Phase 1-5 */
+  .phase {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+  .phase img {
+    width: 95%;
+    margin:auto;
+  }
+  /* iterations */
+  .beforeAfterImg img {
+    width: 75%;
+    margin: auto;
   }
 }
 
 /* -------Tablet*/
 @media screen and (min-width: 760px) and (max-width: 1024px) {
   /* nav and landing -- */
+  nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .toggle {
     display: block;
     font-size: 5rem;
@@ -528,7 +1198,7 @@ p.copyright {
       display: block;
     }
     .landing img {
-      padding-top: 5rem;
+      padding-top: 2rem;
       width: 15%;
     }
     h5.navName, h5.navRole, h5.navLabel {
@@ -539,15 +1209,15 @@ p.copyright {
       font-size: 2.2rem;
     }
     .landingSlogan {
-      bottom: 13rem;
+      bottom: 14rem;
     }
     h1.slogan {
       font-size: 9rem;
-      line-height: 8rem;
-      letter-spacing: .1rem;
+      line-height: 9rem;
+      letter-spacing: .09rem;
     }
   /* project 01 -- */
-  h2 {
+  h2.project {
     font-size: 3.8rem;
   }
   h5 {
@@ -613,10 +1283,12 @@ p.copyright {
   .work2 > img.workImg {
     width: 100%;
     float: none;
+    margin-left: 0;
   }
   /* footer -- */
   .footer {
-    height: 30vh;
+    height: 30rem;
+    bottom: 0;
     }
   .footerText {
     width: 65%;
@@ -628,5 +1300,174 @@ p.copyright {
   p {
     font-size: 2.2rem;
     line-height: 3.5rem;
+  }
+  /* ABOUT PAGE --------------- */
+  .landingAbout {
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  }
+  .landingAboutContainer {
+  height: 75vh;
+  }
+  /* quote */
+  .landingQuote {
+    padding-top: 8rem;
+  }
+  h3#quote {
+    font-size: 2.6rem;
+  }
+  /* Introduction and my story-- */
+  .aboutSection, .subSection, .lastAboutSection {
+  width: 90%;
+  }
+  .box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  }
+  .aboutSectionText {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+  h4 {
+  font-size: 2.2rem;
+  }
+
+  /* PROJECT PAGE ----------------------- */
+  .landingContainer {
+  height: 115vh;
+  background-size: cover;
+  width: 100%;
+  }
+  .landing {
+    height: 100vh;
+    width: 100%;
+  }
+  .landing img {
+    width: 47%;
+    margin: auto;
+    padding-left: 2%;
+  }
+  .landingImg {
+    margin-top: 3rem;
+  }
+  img.obLogo {
+    width: 60%;
+    margin: auto;
+  }
+  .landingText {
+    width: 80%;
+    margin: auto;
+  }
+  /* prototype and deliverable buttons */
+  .protoButton {
+    margin-top: 4rem;
+    width: 24rem;
+    margin-bottom: 2rem;
+  }
+  /*Roles, Deliverables, Specs */
+  .column {
+    float:none;
+    width: 90%;
+    margin: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  /* solution */
+  .solutionImg {
+    width: 100%;
+    margin: auto;
+  }
+  .solutionImg img {
+    width: 33%;
+    margin: auto;
+    padding-top: 3rem;
+  }
+  /*Sections */
+  .section {
+    width: 85%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .sectionTitle > .underline {
+    margin-bottom: 4rem;
+  }
+  /* user survey & comp analysis */
+  .columnPercent {
+    float:none;
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .columnComp {
+    float:none;
+    width: 70%;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .columnComp img {
+    padding-top: 5rem;
+  }
+  .rowComp {
+    margin-bottom: 2rem;
+  }
+  /*user personas */
+  .sectionText {
+    width: 85%;
+    padding-bottom: 2rem;
+  }
+  .columnPersona {
+    float:none;
+    width: 95%;
+    margin: auto;
+    padding-top: 0;
+    padding-top: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .textLeft > h4 {
+    padding-top: 4rem;
+  }
+  .columnImg img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .textLeft ul {
+    padding-bottom: 3rem;
+  }
+  /* concept & identity */
+  .centerText img {
+    width: 90%;
+    margin: auto;
+  }
+  /* pref tests */
+  .sectionImg img {
+    width: 100%;
+  }
+  /*-- Phase 1-5 */
+  .phase {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+  /*phase */
+  .phase img {
+    width: 55%;
+    margin:auto;
+  }
+  /* usability tests */
+  .testingImg img {
+    width: 65%;
+    margin:auto;
+    padding-bottom: 4rem;
+  }
+  /*testing key takeaways*/
+  img.iterations {
+    width: 75%;
+    margin: auto;
   }
 }

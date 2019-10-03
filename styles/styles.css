@@ -58,8 +58,6 @@ main {
   background-repeat: no-repeat;
   font-family:"Poppins", sans-serif;
   background-color: white;
-  padding-left: 10em;
-  padding-right: 10em;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -125,6 +123,7 @@ p {
 /*----------- Nav ALL ------------- */
 nav {
   width: 100%;
+  margin: auto;
   background-color: #111010;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -160,6 +159,7 @@ nav ul li a {
   display: none;
   font-size: 3rem;
 }
+
 h5.navName, h5.navRole, h5.navLabel {
   font-size: 1.6rem;
   color: white;
@@ -862,12 +862,16 @@ N/A
   }
     .toggle {
     display: block;
-    width: 80%;
+    width: 85%;
     margin: auto;
+  }
+  .toggle i {
+    font-size: 4rem;
   }
     nav ul {
       width: 100%;
       display: none;
+      margin-bottom: 9rem;
     }
     nav ul li {
       display: block;
@@ -1012,6 +1016,7 @@ N/A
     font-size: 1.8rem;
   }
   /* PROJECT PAGE -------------------------- */
+  /* nav */
   .landingContainer {
   height: 115vh;
   background-size: cover;
@@ -1168,14 +1173,19 @@ N/A
 @media screen and (min-width: 760px) and (max-width: 1024px) {
   /* nav and landing -- */
   nav {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .toggle {
     display: block;
     font-size: 5rem;
     width: 90%;
     margin: auto;
+    padding-top: 3rem;
+    padding-right: 3rem;
+  }
+  .toggle i {
+    font-size: 6rem;
   }
     nav ul {
       width: 100%;
@@ -1191,10 +1201,14 @@ N/A
     }
     .active {
       display: block;
+      margin-bottom: 5rem;
     }
     .landing img {
       padding-top: 2rem;
       width: 15%;
+    }
+    .landingHome {
+      height: 80vh;
     }
     h5.navName, h5.navRole, h5.navLabel {
       font-size: 3.2rem;

@@ -196,13 +196,14 @@ h5.navRole {
 }
 
 .landingSlogan {
-  position: absolute;
-  bottom: 6rem;
-  width: 85%;
+  width: 100%;
   margin: auto;
+  padding-top: 9rem;
 }
 
 h1.slogan {
+  position: absolute;
+  bottom: 7rem;
   font-size: 9rem;
   font-weight: 400;
   color: white;

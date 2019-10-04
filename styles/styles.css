@@ -30,14 +30,8 @@ body {
   background-color: white;
 }
 
-.homeContainer {
-  width: 100%;
-  background-color: #111010;
-  height: 100vh;
-}
-
 header {
-  width: 85%;
+  width: 100%;
   margin: auto;
   font-family:"Poppins", sans-serif;
   background-color: #111010;
@@ -177,8 +171,11 @@ h5.navRole {
 
 /*----------- HOME PAGE------------------------ */
 /*----------- Landing ------------- */
+
 .landingHome {
   height: 85vh;
+  width: 85%;
+  margin: auto;
   position: relative;
   background-color: #111010;
   overflow: hidden;
@@ -355,7 +352,7 @@ h4.button:hover {
 /*----------- Footer ALL ------------- */
 
 .footer {
-  height: 27rem;
+  height: 26rem;
   background-color: black;
   width: 100%;
   bottom: 0;
@@ -382,7 +379,8 @@ h4.button:hover {
 
 .footerIcons {
   text-align: center;
-  padding: 2em;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
 }
 
 .footerIcons a {
@@ -395,7 +393,6 @@ p.copyright {
   font-size: 1.2rem;
   text-align: center;
   margin: 0;
-  margin-top: 1rem;
 }
 
 
@@ -968,8 +965,7 @@ N/A
   }
   /* footer -- */
   .footer {
-    height: 29rem;
-    bottom: 0;
+    height: 30rem;
     }
   .footerText {
     width: 75%;

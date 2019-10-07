@@ -30,13 +30,6 @@ body {
   background-color: white;
 }
 
-header {
-  width: 100%;
-  margin: auto;
-  font-family:"Poppins", sans-serif;
-  background-color: #111010;
-}
-
 main {
   width: 100%;
   margin: auto;
@@ -154,25 +147,11 @@ nav ul li a {
   font-size: 3rem;
 }
 
-h5.navName, h5.navRole, h5.navLabel {
-  font-size: 1.6rem;
-  color: white;
-  text-transform: uppercase;
-  font-family:"Poppins", sans-serif;
-  margin:0;
-}
-h5.navName {
-  font-size: 2.2rem;
-}
-h5.navRole {
-  font-size: 1.4rem;
-}
-
 
 /*----------- HOME PAGE------------------------ */
 /*----------- Landing ------------- */
 
-.landingHome {
+/*.landingHome {
   height: 85vh;
   width: 85%;
   margin: auto;
@@ -196,45 +175,65 @@ h5.navRole {
   width: 100%;
   margin: auto;
   padding-top: 9rem;
+} */
+header {
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  font-family:"Poppins", sans-serif;
+  background-color: #111010;
+}
+
+header img {
+  padding-left: 70rem;
+  opacity: 0.8;
+  width: 40%;
 }
 
 h1.slogan {
   position: absolute;
-  bottom: 7rem;
-  font-size: 9rem;
+  width: 80rem;
+  bottom: 6rem;
+  padding-left: 16rem;
+  font-size: 6rem;
   font-weight: 400;
   color: white;
   font-family: "Abril Fatface";
+  line-height: 8rem;
 }
 
-.arrowDown {
-  color: white;
-  position: absolute;
-  bottom: 1rem;
+span.blue {
+  color: #99B0B6;
+}
+
+/* ----------- Add skills section to html later */
+.tools {
   text-align: center;
-  width: 100%;
+  margin-bottom: 20rem;
+}
+
+h2.homeTitle {
+  text-align: center;
+  width: 90%;
   margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #202020;
 }
 
-/*----------- Add skills section to html later
-.skills {
-  text-align: center;
-  margin-bottom: 8em;
-  margin-top: 8em;
+.tools img {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-
-.skills p {
-  margin-bottom: 30px;
+h5.appType {
+  font-size: 2rem;
+  font-weight: bold;
 }
-
-.skills img {
-  width: 40px;
-  margin: 0 15px;
-} ------------- */
-
-
 
 /*----------- Project 01 ------------- */
+
+
 .work {
   width: 100%;
   position: relative;
@@ -246,6 +245,12 @@ h1.slogan {
   position: absolute;
   padding-top: 6rem;
   margin-left: 6rem;
+}
+
+.workText p {
+  width: 30rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .work > .workText > .underline {
@@ -266,14 +271,10 @@ h1.slogan {
   float: right;
 }
 
-img.invision {
-  padding-top: 3em;
-  width: 3.5rem;
-}
 
 
 /*----------- Dividers ALL ------------- */
-.homeDivider, .divider, .dividerInside, .dividerInsideLast {
+.homeDivider, .homeSectionDivider, .divider, .dividerInside, .dividerInsideLast {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -284,6 +285,14 @@ img.invision {
   background-color: #E1E1E0;
   width: 100%;
 }
+
+.homeSectionDivider {
+  width: 30%;
+  margin-bottom: 6rem;
+  background-color: #A6544A;
+  height: 2px;
+}
+
 .divider {
   width: 85%;
 }
@@ -307,7 +316,7 @@ img.invision {
 .work2 > .workText {
   position: absolute;
   margin-top: 4.25rem;
-  right: 20rem;
+  right: 10rem;
   text-align: left;
 }
 
@@ -324,11 +333,11 @@ img.invision {
   float: left;
 }
 
-.work2 > img.workImg {
+/*.work2 > img.workImg {
   width: 45%;
   float: left;
   margin-left: 6rem;
-}
+} */
 
 
 
@@ -340,8 +349,8 @@ img.invision {
 }
 
 h4.button {
-  margin-top: 2em;
   color: #202020;
+  margin-top: 1rem;
 }
 h4.button:hover {
   color: #99B0B6;
@@ -879,25 +888,38 @@ N/A
     .active {
       display: block;
     }
-  .landing img {
-    padding-top: 0;
+  header img {
+    padding-left: 14rem;
+    width: 23rem;
   }
-  h5.navName, h5.navRole, h5.navLabel {
-    font-size: 1.8rem;
-    color: white;
+  header {
+    height: 80vh;
   }
-  h5.navRole {
-    font-size: 1.4rem;
-  }
+
   h1.slogan {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 5rem;
     letter-spacing: .1rem;
+    padding-left: 2rem;
+    width: 30rem;
+    margin-bottom: 8rem;
   }
 
   /* project 01 -- */
-  h2.project, h2.aboutTitle, h2.footerTitle {
+  h2.footerTitle {
     font-size: 2.6rem;
+  }
+  h2.homeTitle {
+    font-size: 2.2rem;
+  }
+  .homeSectionDivider {
+    margin-bottom: 3rem;
+  }
+  .tools {
+    margin-bottom: 10rem;
+  }
+  .tools img {
+    padding: 2px 15px;
   }
   h5 {
     font-size: 1.6rem;
@@ -918,6 +940,10 @@ N/A
     text-align: center;
     position: static;
     display: block;
+    padding-top: 2rem;
+  }
+  .workText p {
+    margin: auto;
   }
   .work > .workText > .underline {
     width: 12rem;
@@ -932,15 +958,18 @@ N/A
   img.workImg {
     width: 100%;
   }
-  img.invision {
-    padding-bottom: 3.5rem;
-  }
   h4.button {
-    padding-top: 5rem;
+    padding-top: 1rem;
     margin: 0;
   }
+  h5.appType {
+    font-size: 2rem;
+    font-weight: bold;
+  }
   /* project 02 -- */
-  .work2 > .workText {
+  .work2 {
+    margin-top: 6rem;
+    }.work2 > .workText {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -1200,28 +1229,28 @@ N/A
       display: block;
       margin-bottom: 5rem;
     }
-    .landing img {
-      padding-top: 2rem;
-      width: 15%;
-    }
-    .landingHome {
+    header img {
+      padding-left: 35rem;
+      width: 50%;
+      }
+    header {
       height: 80vh;
     }
-    h5.navName, h5.navRole, h5.navLabel {
-      font-size: 3.2rem;
-      color: white;
-    }
-    h5.navRole, h5.navLabel {
-      font-size: 2.2rem;
-    }
     h1.slogan {
-      font-size: 9rem;
+      font-size: 6rem;
       line-height: 9rem;
       letter-spacing: .09rem;
+      padding-left: 2rem;
+      margin-bottom: 5rem;
+      width: 85%;
     }
   /* project 01 -- */
-  h2.project {
-    font-size: 3.8rem;
+  h5.appType {
+    font-size: 2.4rem;
+  }
+  .workText p {
+    margin: auto;
+    width: 65%;
   }
   h5 {
     font-size: 2.2rem;
@@ -1242,6 +1271,7 @@ N/A
     text-align: center;
     position: static;
     display: block;
+    padding-top: 0;
   }
   .work > .workText > .underline {
     width: 12rem;
@@ -1256,11 +1286,8 @@ N/A
   img.workImg {
     width: 100%;
   }
-  img.invision {
-    padding-bottom: 3.5rem;
-  }
   h4.button {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     margin: 0;
     font-size: 2.6rem;
   }

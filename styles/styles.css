@@ -902,8 +902,13 @@ N/A
     letter-spacing: .1rem;
     padding-left: 2rem;
     width: 30rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
+@media screen and (min-width: 380px) and (max-width: 420px) {
+  h1.slogan {
+    margin-bottom: 2rem;
+  }
+}
 
   /* project 01 -- */
   h2.footerTitle {

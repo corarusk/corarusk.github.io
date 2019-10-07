@@ -930,6 +930,9 @@ N/A
     margin: auto;
     padding: 0;
   }
+  .work, .work2 {
+    margin-bottom: 7rem;
+  }
   .work, .work2, .workText, .workImg, img.workImg {
     display: block;
     text-align: center;
@@ -954,6 +957,7 @@ N/A
   .work > .workImg {
     width: 100%;
     float: none;
+    padding-top: 4rem;
   }
   img.workImg {
     width: 100%;

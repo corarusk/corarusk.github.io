@@ -898,7 +898,8 @@ N/A
       display: block;
     }
   header {
-    height: 85vh;
+    min-height: 90vh;
+    height: auto;
     background-image: url("../images/landingSmall.png");
     background-repeat: no-repeat;
   }
@@ -909,9 +910,8 @@ N/A
     letter-spacing: .1rem;
     padding-left: 2rem;
     width: 30rem;
-    margin-bottom: 2rem;
+    padding-top: 22rem;
   }
-
 
   /* fave tools -- */
   h2.homeTitle {

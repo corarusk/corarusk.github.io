@@ -898,7 +898,7 @@ N/A
       display: block;
     }
   header {
-    min-height: 90vh;
+    min-height: 620px;
     height: auto;
     background-image: url("../images/landingSmall.png");
     background-repeat: no-repeat;

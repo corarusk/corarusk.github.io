@@ -1123,6 +1123,9 @@ N/A
   }
   /* PROJECT PAGE -------------------------- */
   /* nav */
+  .icon-bar {
+    display: none;
+  }
   .landingContainer {
   background-size: cover;
   width: 100%;
@@ -1137,8 +1140,10 @@ N/A
   .landing img {
     width: 47%;
     margin: auto;
-    padding-left: 2%;
+    padding-left: 1%;
+    padding-right: 0;
     padding-top: 2rem;
+    overflow: hidden;
   }
   .landingImg {
     margin-top: 3rem;

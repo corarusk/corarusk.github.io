@@ -192,7 +192,7 @@ header {
 }
 
 .containerTop {
-  background-color: #110010;
+  background-color: #000000;
 }
 
 h1.slogan, h1.greeting {
@@ -464,14 +464,14 @@ p.copyright {
   text-align: center;
   height: 100vh;
   background-image: url("../images/aboutPic.png");
-  background-color: #110010;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .landingAboutContainer {
   height: 100vh;
   position: relative;
-  background-color: #110010;
+  background-color: #000000;
 }
 .landingQuote {
   padding-top: 9rem;

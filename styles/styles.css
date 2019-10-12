@@ -128,7 +128,7 @@ nav ul li {
   padding-right: 8rem;
 }
 nav ul li a:hover {
-  color: #99B0B6;
+  color: #C68880;
 }
 nav ul li a {
   vertical-align: middle;
@@ -150,70 +150,56 @@ nav ul li a {
 
 /*----------- HOME PAGE------------------------ */
 /*----------- Landing ------------- */
-
-/*.landingHome {
-  height: 85vh;
-  width: 85%;
-  margin: auto;
-  position: relative;
-  background-color: #111010;
-  overflow: hidden;
-  }
-
-.landingName {
-  padding-top: .5rem;
-  text-align: center;
-  padding-bottom: 6rem;
-}
-
-.landingName img {
-  width: 4rem;
-  padding-bottom: .2rem;
-}
-
-.landingSlogan {
-  width: 100%;
-  margin: auto;
-  padding-top: 9rem;
-} */
 header {
   width: 100%;
   height: 90vh;
   margin: auto;
   font-family:"Poppins", sans-serif;
   background-image: url("../images/landingBackground.png");
+  background-size: cover;
 }
 
 .containerTop {
   background-color: #110010;
 }
 
-/*header img {
-  padding-left: 70rem;
-  opacity: 0.8;
-  width: 40%;
-} */
-
-h1.slogan {
-  width: 80rem;
-  padding-top: 19rem;
+h1.slogan, h1.greeting {
+  width: 60%;
+  padding-top: 4.5rem;
   padding-left: 16rem;
   font-size: 6rem;
   font-weight: 400;
   color: white;
   font-family: "Abril Fatface";
-  line-height: 8rem;
+  line-height: 6rem;
+  letter-spacing: .2rem;
 }
-span.blue {
-  color: #99B0B6;
+h1.greeting {
+  font-family:"Poppins bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  padding-top: 9rem;
+  font-size: 3.8rem;
+}
+.sloganDivider {
+  margin-top: 4.5rem;
+  margin-left: 16rem;
+  border-style: inset;
+  height: 4px;
+  background-color: #A6544A;
+  width: 20%;
+}
+.landingSlogan {
+  text-align: left;
 }
 
-/* ----------- Add skills section to html later */
+/* ----------- Tools */
 .tools {
   text-align: center;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
+  margin-top: 10rem;
 }
-
 h2.homeTitle {
   text-align: center;
   width: 90%;
@@ -223,7 +209,6 @@ h2.homeTitle {
   font-size: 3rem;
   color: #202020;
 }
-
 .tools img {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -231,8 +216,21 @@ h2.homeTitle {
 
 #latestWork {
   text-align: center;
+  background-image: url("../images/workDesktop.png");
+  background-size: cover;
+  width: 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
-
+h2.workTitle {
+  text-align: center;
+  font-size: 3.9rem;
+  background-color: #A6544A;
+  padding: 2.5rem;
+  margin: auto;
+  width: 25%;
+  margin-top: 0;
+}
 h5.appType {
   font-size: 2rem;
   font-weight: bold;
@@ -261,8 +259,8 @@ h5.appType {
 }
 
 .work > .workText > .underline {
-  background-color: #99B0B6;
-  height: 3px;
+  background-color: #A6544A;
+  height: 4px;
   width: 130px;
   margin-top: 3px;
 }
@@ -281,7 +279,7 @@ h5.appType {
 
 
 /*----------- Dividers ALL ------------- */
-.homeDivider, .homeSectionDivider, .divider, .dividerInside, .dividerInsideLast {
+.homeDivider, .homeSectionDivider, .divider, .dividerInside, .dividerInsideLast, .focusDivider, .aboutFocusDivider {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -293,11 +291,24 @@ h5.appType {
   width: 100%;
 }
 
+.focusDivider {
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.aboutFocusDivider {
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
 .homeSectionDivider {
   width: 30%;
   margin-bottom: 6rem;
   background-color: #A6544A;
-  height: 2px;
+  height: 4px;
 }
 
 .divider {
@@ -328,7 +339,7 @@ h5.appType {
 }
 
 .work2 > .workText > .underline {
-  background-color: #99B0B6;
+  background-color: #A6544A;
   height: 3px;
   width: 130px;
   float: left;
@@ -356,11 +367,11 @@ h5.appType {
 }
 
 h4.button {
-  color: #202020;
+  color: #000000;
   margin-top: 1rem;
 }
 h4.button:hover {
-  color: #99B0B6;
+  color: #A6544A;
 }
 
 
@@ -453,11 +464,11 @@ h3#quote {
 .iAm {
   color: #A6544A;
 }
-.box {
-  border: 1px solid #E1E1E0;
-  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.25);
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.focus, .aboutFocus {
+  width: 85%;
+}
+.aboutFocus {
+  width:100%;
 }
 .AboutSectionText {
   width: 80%;
@@ -583,7 +594,6 @@ h2.keyTakeaways {
 
 /*--- Landing---------------------- */
 .landingContainer {
-  height: 115vh;
   background-image: url("../images/teacherPower.png");
   background-color: #cccccc;
   background-repeat: no-repeat;
@@ -595,20 +605,19 @@ h2.keyTakeaways {
   margin: auto;
   padding-top: 5rem;
   text-align: center;
-  height: 115vh;
 }
-.landing img {
-  width: 270px;
+.landingText img {
+  width: 60%;
   left:0;
   right:0;
   margin: auto;
   padding-bottom: 5rem;
 }
-.landingImg {
-    margin-top: 8rem;
-}
-.landingImg > img {
-  padding-bottom: 0;
+
+.landing > img {
+  width: 75%;
+  margin-left: 6rem;
+  padding: 4rem;
 }
 .obLogo {
   padding: 4rem;
@@ -617,18 +626,23 @@ h2.keyTakeaways {
   width: 45%;
   margin: auto;
 }
+
 /* prototype button */
-.protoButton {
+.protoButton, .protoButtonMain {
   margin: auto;
-  margin-top: 6rem;
   background-color: #111010;
   border: none;
   padding: 14px 60px;
   width: 20rem;
-  box-shadow: 5.09302px 10.186px 12.7326px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  margin-bottom: 3rem;
+  margin-top: 6rem;
 }
-.protoButton a {
+.protoButton {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.protoButton a, .protoButtonMain a {
   text-align: center;
   text-decoration: none;
   color: white;
@@ -636,6 +650,9 @@ h2.keyTakeaways {
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   font-weight: normal;
+}
+.protoButton:hover, .protoButtonMain:hover {
+  background-color: #A6544A;
 }
 /*----- Summary ---------------------- */
 /*----- Roles, Deliverables, Specs */
@@ -688,7 +705,7 @@ h1.percent {
   padding-right: 9.16%;
   padding-top: 0;
 }
-.surveyContainer {
+.greyContainer {
   width: 100%;
   margin: auto;
   background-color: #efefef;
@@ -779,10 +796,16 @@ h1.percent {
 }
 /*----Information Architecture ------------- */
 /*----- User Stories */
-.centerText {
+.centerText, .focus {
   text-align: center;
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.focus {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 0;
 }
 /*----- Flows and Sitemap */
 .flowContainer {
@@ -822,12 +845,9 @@ h1.percent {
 .deliverableLink, .deliverableLinkLarge, .deliverableLinkMedium {
   margin: auto;
   margin-top: 6rem;
-  background-color: #ffffff;
-  border: 2px solid #A6544A;
+  background-color: #A6544A;
   padding: 14px 60px;
   width: 20rem;
-  box-shadow: 5.09302px 10.186px 12.7326px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
   text-align: center;
 }
 .deliverableLinkLarge, .deliverableLinkMedium {
@@ -837,11 +857,14 @@ h1.percent {
 .deliverableLink a, .deliverableLinkLarge a, .deliverableLinkMedium a {
   text-align: center;
   text-decoration: none;
-  color: #A6544A;
+  color: #ffffff;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   font-weight: normal;
+}
+.deliverableLink:hover, .deliverableLinkLarge:hover, .deliverableLinkMedium:hover {
+  background-color: black;
 }
 /*------- pref testing
 N/A
@@ -900,17 +923,23 @@ N/A
   header {
     min-height: 620px;
     height: auto;
-    background-image: url("../images/landingSmall.png");
-    background-repeat: no-repeat;
+    background-image: url("../images/landingBackgroundMobile.png");
   }
 
-  h1.slogan {
+  h1.slogan, h1.greeting {
     font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: .1rem;
     padding-left: 2rem;
     width: 30rem;
-    padding-top: 22rem;
+    line-height: 5.2rem;
+  }
+
+  h1.greeting {
+    width: 95%;
+    font-size: 3.4rem;
+  }
+  .sloganDivider {
+    margin-left: 2rem;
+    width: 30%;
   }
 
   /* fave tools -- */
@@ -927,6 +956,16 @@ N/A
     padding: 2px 15px;
   }
   /* both projects -- */
+
+  #latestWork {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-image: url("../images/workMobile.png");
+  }
+  h2.workTitle {
+    padding: 1rem;
+    width: 60%;
+  }
   h5 {
     font-size: 1.6rem;
     line-height: 2rem;
@@ -1036,15 +1075,13 @@ N/A
   /* Introduction and my story-- */
   .aboutSection, .subSection, .lastAboutSection {
     width: 90%;
+    margin: auto;
   }
-  .box {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .aboutFocus {
+    width: 90%;
+    margin: auto;
   }
-  .aboutSectionText {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+
   p {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -1055,12 +1092,10 @@ N/A
   /* PROJECT PAGE -------------------------- */
   /* nav */
   .landingContainer {
-  height: 85vh;
   background-size: cover;
   width: 100%;
   }
   .landing {
-    height: 85vh;
     width: 100%;
   }
   .landingText > p {
@@ -1076,8 +1111,9 @@ N/A
   .landingImg {
     margin-top: 3rem;
   }
-  .landingImg > img {
-    display: none;
+  .landing > img {
+    width: 95%;
+    margin-left: 4%;
   }
   img.obLogo {
     width: 60%;
@@ -1089,7 +1125,7 @@ N/A
     margin: auto;
   }
   /* prototype button */
-  .protoButton {
+  .protoButton, .protoButtonMain {
     margin-top: 4rem;
     width: 18rem;
     margin-bottom: 2rem;
@@ -1179,6 +1215,9 @@ N/A
     width: 29rem;
   }
   /* usability tests */
+  .focus, .aboutFocus {
+    width: 80%;
+  }
   .testingImg img {
     width: 95%;
     margin:auto;
@@ -1261,16 +1300,31 @@ N/A
     }
     header {
       height: 85vh;
-      background-image: url("../images/landingTablet.png");
+      background-image: url("../images/landingBackgroundMobile.png");
     }
-    h1.slogan {
+    h1.slogan, h1.greeting {
       font-size: 6rem;
       line-height: 9rem;
       letter-spacing: .09rem;
-      padding-left: 2rem;
-      padding-top: 30rem;
+      padding-left: 5rem;
       width: 85%;
     }
+    h1.greeting {
+      font-size: 5rem;
+      padding-top: 16rem;
+    }
+    .sloganDivider {
+    margin-left: 5rem;
+    width: 40%;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+  #latestWork {
+      background-image: url("../images/workMobile.png");
+  }
+  h2.workTitle {
+    width: 60%;
+  }
   /* project 01 -- */
   h5.appType {
     font-size: 2.4rem;
@@ -1288,6 +1342,9 @@ N/A
     margin: auto;
     padding: 0;
   }
+  .work {
+    margin-top: 8rem;
+  }
   .work, .work2, .workText, .workImg, img.workImg {
     display: block;
     text-align: center;
@@ -1304,7 +1361,7 @@ N/A
     width: 12rem;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
   }
   .work > .workImg {
     width: 100%;
@@ -1439,6 +1496,9 @@ N/A
     width: 33%;
     margin: auto;
     padding-top: 3rem;
+  }
+  .focus, .aboutFocus {
+    width: 85%;
   }
   /*Sections */
   .section {

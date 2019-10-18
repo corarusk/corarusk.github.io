@@ -178,7 +178,117 @@ nav ul li a {
   display: none;
   font-size: 3rem;
 }
+/*----------- contact------------------------ */
 
+.contactContainer {
+  width: 100%;
+  height: 85vh;
+  background-color: white;
+}
+#connect {
+  letter-spacing: .09rem;
+  font-size: 4.5rem;
+  color: black;
+}
+h5#emailLink a {
+  color: #A6544A;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+h5#emailLink a:hover {
+  text-decoration: underline;
+}
+h5#emailLink {
+  margin-top: 4rem;
+}
+.contactDivider {
+  border-style: inset;
+  height: 5px;
+  background-color: #A6544A;
+  width: 40%;
+  margin: auto;
+  float: left;
+}
+#contactForm {
+  width: 40%;
+  margin-top: 2.5%;
+  padding-top: 2%;
+  margin-left: 8%;
+  padding-left: 3%;
+  float: left;
+}
+#contactContainerRight {
+  width: 45%;
+  float: right;
+  text-align: center;
+  margin-right: 2%;
+}
+#contactPic {
+  width: 80%;
+  margin: auto;
+  height: 60vh;
+  background-image: url("../images/contactAbout.png");
+  background-size: cover;
+  margin-top: 10%;
+}
+span#grey {
+  font-style: italic;
+  text-transform: capitalize;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: black;
+}
+span.title {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-weight: 800;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-top: 5rem;
+}
+
+.contactButton {
+  background-color: #A6544A;
+  padding: 14px 60px;
+  margin-top: 4rem;
+  width: 40%;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+}
+.contactButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.contactInput {
+  border: 2px solid #ebebeb;
+  font-size: 2.2rem;
+  padding: .8rem;
+  padding-left: 1rem;
+  background-color: white;
+}
+#email {
+  height: 3.5rem;
+  width: 90%;
+  margin:auto;
+}
+#message {
+  width: 90%;
+  margin: auto;
+  height: 15rem;
+}
+.fa-paper-plane {
+  padding-right: 8%;
+}
 
 /*----------- HOME PAGE------------------------ */
 /*----------- Landing ------------- */
@@ -674,7 +784,7 @@ h2.keyTakeaways {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-.protoButton a, .protoButtonMain a {
+.protoButton a, .protoButtonMain a, .submit {
   text-align: center;
   text-decoration: none;
   color: white;
@@ -682,6 +792,11 @@ h2.keyTakeaways {
   text-transform: uppercase;
   font-family:"Poppins", sans-serif;
   font-weight: normal;
+}
+
+.submit {
+  padding: 0;
+  margin: 0;
 }
 .protoButton:hover, .protoButtonMain:hover {
   background-color: #A6544A;
@@ -952,6 +1067,52 @@ N/A
     .active {
       display: block;
     }
+
+  /* contact page -- */
+  #connect {
+    font-size: 3.6rem;
+    margin-top: 1.5rem;
+  }
+  .contactContainer, #contactForm {
+    float: none;
+    width: 95%;
+    padding: 0;
+    margin: auto;
+    height: auto;
+  }
+  #contactForm {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  label {
+    margin-top: 4rem;
+  }
+  .contactContainer {
+    width: 100%;
+  }
+  #contactPic, #contactContainerRight {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    float: none;
+  }
+  #contactContainerRight > h5 {
+    display: none;
+  }
+  .contactButton {
+    width: 96%;
+    margin-bottom: 4rem;
+    margin-top:4rem;
+    text-align: center;
+  }
+  #message {
+    height: 20rem;
+  }
+
+
+/* home page ************/
   header {
     min-height: 620px;
     height: auto;
@@ -1335,6 +1496,55 @@ N/A
       display: block;
       margin-bottom: 5rem;
     }
+    /* contact page -- */
+    #connect {
+      margin-top: 3rem;
+    }
+    .contactContainer, #contactForm {
+      float: none;
+      width: 95%;
+      padding: 0;
+      margin: auto;
+      height: auto;
+    }
+    #contactForm {
+      display: block;
+      width: 95%;
+      margin: auto;
+      margin-right: 0;
+    }
+    label {
+      margin-top: 4rem;
+    }
+    .contactContainer {
+      width: 100%;
+    }
+    #contactPic, #contactContainerRight {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 45vh;
+      float: none;
+    }
+    #contactContainerRight > h5 {
+      display: none;
+    }
+    .contactButton {
+      width: 90%;
+      margin-bottom: 4rem;
+      margin-top:4rem;
+      text-align: center;
+      margin-left: 0;
+      font-size: 2.8rem;
+    }
+    #email {
+      height: 5rem;
+    }
+    #message {
+      height: 25rem;
+    }
+
+
     header {
       height: 85vh;
       background-image: url("../images/landingBackgroundMobile.png");

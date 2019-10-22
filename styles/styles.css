@@ -742,10 +742,10 @@ h2.keyTakeaways {
 /*--- Landing---------------------- */
 .seasonlyLanding {
   width: 100%;
-  height: auto;
-}
-.seasonlyLanding img {
-  width: 100%;
+  height: 80vh;
+  background-image: url("../images/project2Landing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2#project {
@@ -1257,12 +1257,14 @@ N/A
     height: 20rem;
   }
 /* project 2 ***************/
-.seasonlyLanding img#desktopLanding {
-  display: none;
+.seasonlyLanding {
+  background-image: url("../images/project2LandingMobile.png");
 }
 
+
+
 #design img{
-  display: none;
+  display: none !important;
 }
 .fourImg {
   width: 100%;

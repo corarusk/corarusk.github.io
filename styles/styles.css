@@ -16,7 +16,7 @@
     display: table;
   }
   .seasonlyLanding img#mobileLanding {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -740,12 +740,9 @@ h2.keyTakeaways {
 
 /*--- PROJECT 2---------------------- */
 /*--- Landing---------------------- */
-.seasonlyLanding {
+.seasonlyLanding img {
   width: 100%;
-  height: 80vh;
-  background-image: url("../images/project2Landing.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: auto;
 }
 
 h2#project {
@@ -859,6 +856,7 @@ span.emBold {
   height: 500px;
   margin-bottom: 0;
   padding-bottom: 0;
+  border: none;
 }
 .deliverableLink#bottom {
   margin-bottom: 8rem;
@@ -870,12 +868,12 @@ span.emBold {
   padding-top: 0;
 }
 
-#maze img {
+.maze img{
   width: 25%;
   padding: 2rem;
   margin: auto;
 }
-#maze {
+.maze {
   text-align: center;
 }
 
@@ -1257,11 +1255,9 @@ N/A
     height: 20rem;
   }
 /* project 2 ***************/
-.seasonlyLanding {
-  background-image: url("../images/project2LandingMobile.png");
+.seasonlyLanding img#desktopLanding {
+  display: none !important;
 }
-
-
 
 #design img{
   display: none !important;
@@ -1275,7 +1271,7 @@ N/A
 .threeSectionImg img {
   width: 100%;
 }
-#maze img {
+.maze img {
   width: 31%;
   padding: .2rem;
   margin-top: 1rem;
@@ -1733,7 +1729,43 @@ N/A
     #message {
       height: 25rem;
     }
+    /* project 2 ***************/
+    .seasonlyLanding img#desktopLanding {
+      display: none !important;
+    }
 
+    #design img{
+      display: none !important;
+    }
+    .fourImg {
+      width: 100%;
+    }
+    .fourImg img{
+      width: 45%;
+    }
+    .threeSectionImg img {
+      width: 100%;
+    }
+    #maze img {
+      width: 31%;
+      padding: .2rem;
+      margin-top: 1rem;
+    }
+    .gif {
+      display: none;
+    }
+    .smallSectionImg, .mediumSectionImg {
+      width: 95%;
+      text-align: center;
+      margin: auto;
+      padding-left: 0;
+    }
+     .smallSectionImg img, .mediumSectionImg img {
+       width: 95%;
+     }
+     .twoSectionImg img {
+       width: 75%;
+     }
 
     header {
       height: 85vh;

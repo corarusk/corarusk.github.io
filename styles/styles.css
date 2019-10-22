@@ -15,6 +15,9 @@
     clear: both;
     display: table;
   }
+  .seasonlyLanding img#mobileLanding {
+    display: none;
+  }
 }
 
 html {
@@ -136,8 +139,6 @@ p {
 .message, .linkedin {
   background: #C68880;
 }
-
-
 /*----------- Nav ALL ------------- */
 nav {
   width: 100%;
@@ -384,14 +385,14 @@ h5.appType {
 .work {
   width: 100%;
   position: relative;
-  margin-bottom: 4em;
+  margin-bottom: 8rem;
   margin-top: 4em;
 }
 
 .work > .workText {
   position: absolute;
   padding-top: 6rem;
-  margin-left: 6rem;
+  margin-left: 8rem;
 }
 
 .workText p {
@@ -474,10 +475,11 @@ h5.appType {
 }
 
 .work2 > .workText {
-  position: absolute;
+  position: relative;
   margin-top: 4.25rem;
-  right: 10rem;
-  text-align: left;
+  width: 20%;
+  float: right;
+  margin-right: 20rem;
 }
 
 .work2 > .workText > .underline {
@@ -491,6 +493,11 @@ h5.appType {
 .work2 > .workImg {
   width: 55%;
   float: left;
+  padding-left: 3rem;
+}
+
+.workImg img{
+  width: 85%;
 }
 
 /*.work2 > img.workImg {
@@ -699,9 +706,6 @@ h3#quote {
   text-align: center;
 }
 /* Key Takeaways Section */
-.takeawayText ul {
-  list-style-type: disc;
-}
 .takeawayLabel {
   color: #A6544A;
   text-transform: uppercase;
@@ -734,7 +738,148 @@ h2.keyTakeaways {
   margin: auto;
 }
 
+/*--- PROJECT 2---------------------- */
 /*--- Landing---------------------- */
+.seasonlyLanding {
+  width: 100%;
+  height: auto;
+}
+.seasonlyLanding img {
+  width: 100%;
+}
+
+h2#project {
+  font-size: 4rem;
+}
+/* About --------*/
+span.em {
+  font-style: italic;
+}
+
+.problemImg img{
+  width: 60%;
+  margin:auto;
+  margin-bottom: 5rem;
+}
+.problemImg {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.competitor {
+  width: 80%;
+}
+
+.persona {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+span.bold {
+  font-weight: 800;
+}
+.threeSectionImg img{
+  width: 33%;
+  margin-bottom: 3rem;
+}
+.halfSectionImg img{
+  width: 25%;
+  padding: 3rem;
+  margin: auto;
+}
+.halfSectionImg, .twoSectionImg, .mediumSectionImg {
+  text-align: center;
+}
+.mediumSectionImg img {
+  width: 85%;
+  margin-top: 4rem;
+}
+.twoSectionImg img {
+  width: 35%;
+  padding:3rem;
+  margin:auto;
+}
+
+.redContainer {
+  background-color: #eddcda;
+  width: 100%;
+}
+.testSection {
+  width: 65%;
+  margin: auto;
+  padding:1rem;
+}
+
+.takeawayText ul, ul.bullet {
+  font-size: 1.8rem;
+  list-style-type:disc;
+  display: list-item;
+  padding-left: 2.5rem;
+  font-family:"Poppins", sans-serif;
+  font-weight: normal;
+  line-height: 2.5rem;
+  color: #202020;
+}
+#short {
+  padding-bottom: 3rem;
+}
+#design img {
+  width: 75%;
+  margin: auto;
+}
+#design {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.takeawayText ul li {
+  padding-bottom: 2rem;
+  list-style-type:disc;
+}
+span.emBold {
+  text-transform: lowercase;
+  font-weight: bolder;
+  font-style: italic;
+}
+.fourImg img{
+  width: 20%;
+  padding: 2%;
+  margin: auto;
+}
+.fourImg {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.gif {
+  margin-top: 4rem;
+  width: 750px;
+  height: 500px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.deliverableLink#bottom {
+  margin-bottom: 8rem;
+}
+
+#smallCenter {
+  width: 70%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#maze img {
+  width: 25%;
+  padding: 2rem;
+  margin: auto;
+}
+#maze {
+  text-align: center;
+}
+
+/*---prject 1  Landing---------------------- */
 .landingContainer {
   background-image: url("../images/teacherPower.png");
   background-color: #cccccc;
@@ -765,8 +910,9 @@ h2.keyTakeaways {
   padding: 4rem;
 }
 .landingText {
-  width: 45%;
+  width: 55%;
   margin: auto;
+  text-align: center;
 }
 
 /* prototype button */
@@ -1110,8 +1256,43 @@ N/A
   #message {
     height: 20rem;
   }
+/* project 2 ***************/
+.seasonlyLanding img#desktopLanding {
+  display: none;
+}
 
-
+#design img{
+  display: none;
+}
+.fourImg {
+  width: 100%;
+}
+.fourImg img{
+  width: 45%;
+}
+.threeSectionImg img {
+  width: 100%;
+}
+#maze img {
+  width: 31%;
+  padding: .2rem;
+  margin-top: 1rem;
+}
+.gif {
+  display: none;
+}
+.smallSectionImg, .mediumSectionImg {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  padding-left: 0;
+}
+ .smallSectionImg img, .mediumSectionImg img {
+   width: 95%;
+ }
+ .twoSectionImg img {
+   width: 75%;
+ }
 /* home page ************/
   header {
     min-height: 620px;
@@ -1177,6 +1358,8 @@ N/A
   }
   img.workImg {
     width: 100%;
+    margin:0;
+    padding:0;
   }
   h4.button {
     padding-top: 1rem;
@@ -1229,11 +1412,16 @@ N/A
   .work2 > .workImg {
     width: 100%;
     float: none;
+    padding-left: 0;
   }
   .work2 > img.workImg {
     width: 100%;
     float: none;
     margin-left: 0;
+  }
+  .work2 > .workText {
+    float: none;
+    padding-top: 2rem;
   }
   /* footer -- */
   .footer {
